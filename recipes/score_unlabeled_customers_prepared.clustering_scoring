@@ -1,0 +1,12 @@
+{
+    "filterInputColumns": false, 
+    "sparkParams": {
+        "pipelineAllowStart": null, 
+        "sparkPreparedDFStorageLevel": null, 
+        "sparkConf": null, 
+        "sparkRepartitionNonHDFS": null, 
+        "pipelineAllowMerge": null
+    }, 
+    "removeOutliers": false, 
+    "keptInputColumns": []
+}

@@ -1,0 +1,488 @@
+{
+  "charts": [
+    {
+      "copySelectionFromScript": true, 
+      "def": {
+        "boxplotBreakdownDim": [], 
+        "boxplotValue": [], 
+        "bubblesOptions": {
+          "defaultRadius": 5, 
+          "singleShape": "FILLED_CIRCLE"
+        }, 
+        "colorMeasure": [], 
+        "colorOptions": {
+          "ccScaleMode": "NORMAL", 
+          "colorPalette": "default", 
+          "singleColor": "#659a88", 
+          "transparency": 0.9
+        }, 
+        "colorPaletteType": "linear", 
+        "computeMode": "NONE", 
+        "filters": [], 
+        "genericDimension0": [
+          {
+            "column": "State", 
+            "filters": [], 
+            "generateOthersCategory": true, 
+            "isA": "dimension", 
+            "maxValues": 55, 
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            }, 
+            "possibleNewFilters": [
+              {
+                "group": "Measure values", 
+                "label": "Count of records", 
+                "measureFilterId": 0, 
+                "type": "MEASURE_VALUES"
+              }
+            ], 
+            "possibleSorts": [
+              {
+                "label": "Natural ordering", 
+                "sortAscending": true, 
+                "type": "NATURAL"
+              }, 
+              {
+                "label": "Count of records, descending", 
+                "measureIdx": 0, 
+                "type": "AGGREGATION"
+              }, 
+              {
+                "label": "Count of records, ascending", 
+                "measureIdx": 0, 
+                "sortAscending": true, 
+                "type": "AGGREGATION"
+              }
+            ], 
+            "sort": {
+              "label": "Natural ordering", 
+              "sortAscending": true, 
+              "type": "NATURAL"
+            }, 
+            "type": "ALPHANUM"
+          }
+        ], 
+        "genericDimension1": [], 
+        "genericMeasures": [
+          {
+            "computeMode": "NORMAL", 
+            "displayAxis": "axis1", 
+            "displayType": "column", 
+            "displayed": true, 
+            "function": "COUNT", 
+            "isA": "measure", 
+            "type": "NUMERICAL"
+          }
+        ], 
+        "geometry": [], 
+        "groupDimension": [], 
+        "hexbinRadius": 20, 
+        "includeZero": true, 
+        "mapGridOptions": {
+          "gridLatDeg": 0.5, 
+          "gridLonDeg": 0.5
+        }, 
+        "mapOptions": {
+          "tilesLayer": "mapquest-std"
+        }, 
+        "name": "Count by State", 
+        "pieOptions": {
+          "donutHoleSize": 50
+        }, 
+        "showLegend": true, 
+        "sizeMeasure": [], 
+        "smoothing": true, 
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAB8UlEQVRoQ+2aPU/DMBCG7yo+NwYmhoYVJiQWEH8hDPBLWGhX1jDxS0Co3RlYGRADIyILAxMLCKhUo6A4OK4dn8mH0ui65mrfc+97F7sqQkc/wXD8Ekfhho6HHeUFBk6VZYW7YnG2NFu6K15OOVph6WA4voyj8LiJ2s4lsC1pSsG8gMtsVJSMr8JJHsl6yYnJJyf1e6STls/ilGrLmDqB1ZwlMAjxGp8f7qg5Gg8eJuCiIlAKFAxGT4B479PDPgrrsb+QdQObrCSLURdwpmYqo7R/+4DPbhaCj/chIOzHURgqts9uORSFKwXO1FGGh6lnbXG5hBVL90+vDwB7Kwi4ZwNWQdShpbePDpzLz9fSJpDNk6s1sbz4qN41XcCpvT6THp5Op7cAvTtEsSSBhYCt3vdk9/ni6M0EgF+Tbbln48CFfZo6QX2VZBUXohAYEVZz/Wewkv7cFe89tEzK2YD1/GaSIQC7XnG1AsvNXVW0PW8C2FUgksL9wegBEdfLAs8kU4PCDKxXgDKl26ywU9EmgMlJVGBp8l4ysA6FyUkwcP7gkbyHycWjBv5HYerazrh5UdgJQg1gYLY09zC1W6xxPLQAZn7T0k9apav8dwhwXg8r26vMwaOyJHhK85TmKV26nXhKG6Z06aq2fIHO/sfDVvcfTqlrVg5+LK8AAAAASUVORK5CYII=", 
+        "tooltipMeasures": [], 
+        "type": "multi_columns_lines", 
+        "uaColor": [], 
+        "uaSize": [], 
+        "uaTooltip": [], 
+        "uaXDimension": [], 
+        "uaYDimension": [], 
+        "userEditedName": true, 
+        "variant": "normal", 
+        "xAxisMode": "NORMAL", 
+        "xDimension": [], 
+        "xMeasure": [], 
+        "yAxisMode": "NORMAL", 
+        "yDimension": [], 
+        "yMeasure": []
+      }
+    }, 
+    {
+      "copySelectionFromScript": true, 
+      "def": {
+        "colorOptions": {
+          "colorPalette": "default", 
+          "singleColor": "#659a88", 
+          "transparency": 0.9
+        }, 
+        "filters": [], 
+        "genericDimension0": [
+          {
+            "column": "VMail_Plan", 
+            "filters": [], 
+            "generateOthersCategory": true, 
+            "isA": "dimension", 
+            "maxValues": 20, 
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            }, 
+            "possibleNewFilters": [
+              {
+                "group": "Measure values", 
+                "label": "Average of Churn", 
+                "measureFilterId": 0, 
+                "type": "MEASURE_VALUES"
+              }
+            ], 
+            "possibleSorts": [
+              {
+                "label": "Natural ordering", 
+                "sortAscending": true, 
+                "type": "NATURAL"
+              }, 
+              {
+                "label": "Average of Churn, descending", 
+                "measureIdx": 0, 
+                "type": "AGGREGATION"
+              }, 
+              {
+                "label": "Average of Churn, ascending", 
+                "measureIdx": 0, 
+                "sortAscending": true, 
+                "type": "AGGREGATION"
+              }
+            ], 
+            "sort": {
+              "label": "Average of Churn, descending", 
+              "measureIdx": 0, 
+              "type": "AGGREGATION"
+            }, 
+            "type": "ALPHANUM"
+          }
+        ], 
+        "genericDimension1": [], 
+        "genericMeasures": [
+          {
+            "column": "Churn", 
+            "displayAxis": "axis1", 
+            "displayType": "column", 
+            "displayed": true, 
+            "function": "AVG", 
+            "isA": "measure", 
+            "type": "NUMERICAL"
+          }
+        ], 
+        "includeZero": true, 
+        "name": "Avg. of Churn by VMail_Plan", 
+        "showLegend": true, 
+        "smoothing": true, 
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAx0lEQVRoQ+2Zyw2AIBBEpRFtSNuwBWqgBdvQhrQRjTFeULMQWKLxeV0+7jBvDmCqn30mtt/GTmvInNm10WuHrJs6JvqnaPhBck441YuZ5mNpSUgYhuFDAUJLYqVQndCShCa0CC1CS6KkaJ3QkuQmtAitPKFV23GQ3LbXF9f1IePOMa9lWAsdGpbsoaW8v6/WPpwwJ+wpoGU1LK10/w3DMAzDZd6WtMIRhmEYhmH4loLUlwdCK9PNCilNSksKfKwebemP9Xf53Q2DCuQpDqe2rgAAAABJRU5ErkJggg==", 
+        "type": "multi_columns_lines", 
+        "userEditedName": true, 
+        "variant": "normal"
+      }
+    }
+  ], 
+  "checklists": {
+    "checklists": []
+  }, 
+  "creationTag": {
+    "lastModifiedBy": {
+      "displayName": "Administrator", 
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1430992563005, 
+    "versionNumber": 0
+  }, 
+  "description": "## How we proceed ?\n\n1. To find meaningful segments on the customers, we tested various settings (4,5,6,7 clusters) on the algorithm K-means -- [The full list of available algorithms is here](/projects/DKU_CHURN/analysis/To45m4yi/ml/c/IRL6lq6i/settings/).\n2. The four differents settings result in [3 differents models](/projects/DKU_CHURN/analysis/To45m4yi/ml/c/IRL6lq6i/) that are listed in the tab _Models_.\n\n## Results\n\n1. For each model, we interpreted the resulting segments (clusters) by looking at the charts on the models and on the predicted values.\n2. We then named the clusters of [K-means algorithm model with 6 clusters](/projects/DKU_CHURN/analysis/To45m4yi/ml/c/IRL6lq6i/A-DKU_CHURN-To45m4yi-IRL6lq6i-s3-pp1-m3/report/) by visiting the associated charts on the predicted data.\n3. The model with 6 segments have been deployed in the [flow](/projects/DKU_CHURN/flow/) and is used to map customers each customers in its segment.\n\n## Visit the segmentation insights\n\nTry to interpret yourself these segments, by visiting :\n\n1. the [heatmap](/projects/DKU_CHURN/analysis/To45m4yi/ml/c/IRL6lq6i/A-DKU_CHURN-To45m4yi-IRL6lq6i-s3-pp1-m3/report/#heatmap)\n2. and [custom charts](/projects/DKU_CHURN/analysis/To45m4yi/ml/c/IRL6lq6i/A-DKU_CHURN-To45m4yi-IRL6lq6i-s3-pp1-m3/charts/)\n\n\nNote : In this analysis, we neither do cleansing nor create new features but if needed, this could have been done in the _Script_ tab.", 
+  "inputDatasetSmartName": "customers_prepared", 
+  "name": "Clustering customers into segments", 
+  "script": {
+    "analysisColumnData": {}, 
+    "charts": [
+      {
+        "$$hashKey": "21V", 
+        "chartOptions": {
+          "enableLegendEnabled": true, 
+          "enabledMCModes": [
+            [
+              "NORMAL", 
+              "Normal"
+            ]
+          ], 
+          "smoothingEnabled": false, 
+          "zeroEnabled": false
+        }, 
+        "data": {
+          "boxplotBreakdownDim": [], 
+          "boxplotValue": [], 
+          "bubblesOptions": {
+            "defaultRadius": 5, 
+            "singleShape": "FILLED_CIRCLE"
+          }, 
+          "colorMeasure": [], 
+          "colorOptions": {
+            "ccScaleMode": "NORMAL", 
+            "colorPalette": "default", 
+            "singleColor": "#659a88", 
+            "transparency": 0.9
+          }, 
+          "colorPaletteType": "linear", 
+          "computeMode": "NONE", 
+          "filters": [], 
+          "genericDimension0": [
+            {
+              "column": "State", 
+              "filters": [], 
+              "generateOthersCategory": true, 
+              "isA": "dimension", 
+              "maxValues": 55, 
+              "possibleNewFilters": [
+                {
+                  "group": "Measure values", 
+                  "label": "Count of records", 
+                  "measureFilterId": 0, 
+                  "type": "MEASURE_VALUES"
+                }
+              ], 
+              "possibleSorts": [
+                {
+                  "label": "Natural ordering", 
+                  "sortAscending": true, 
+                  "type": "NATURAL"
+                }, 
+                {
+                  "label": "Count of records, descending", 
+                  "measureIdx": 0, 
+                  "type": "AGGREGATION"
+                }, 
+                {
+                  "label": "Count of records, ascending", 
+                  "measureIdx": 0, 
+                  "sortAscending": true, 
+                  "type": "AGGREGATION"
+                }
+              ], 
+              "sort": {
+                "label": "Natural ordering", 
+                "sortAscending": true, 
+                "type": "NATURAL"
+              }, 
+              "type": "ALPHANUM"
+            }
+          ], 
+          "genericDimension1": [], 
+          "genericMeasures": [
+            {
+              "computeMode": "NORMAL", 
+              "displayAxis": "axis1", 
+              "displayType": "column", 
+              "displayed": true, 
+              "function": "COUNT", 
+              "isA": "measure", 
+              "type": "NUMERICAL"
+            }
+          ], 
+          "geometry": [], 
+          "groupDimension": [], 
+          "hexbinRadius": 20, 
+          "includeZero": true, 
+          "mapGridOptions": {
+            "gridLatDeg": 0.5, 
+            "gridLonDeg": 0.5
+          }, 
+          "mapOptions": {
+            "tilesLayer": "mapquest-std"
+          }, 
+          "name": "Count by State", 
+          "pieOptions": {
+            "donutHoleSize": 50
+          }, 
+          "showLegend": true, 
+          "sizeMeasure": [], 
+          "smoothing": true, 
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAB8UlEQVRoQ+2aPU/DMBCG7yo+NwYmhoYVJiQWEH8hDPBLWGhX1jDxS0Co3RlYGRADIyILAxMLCKhUo6A4OK4dn8mH0ui65mrfc+97F7sqQkc/wXD8Ekfhho6HHeUFBk6VZYW7YnG2NFu6K15OOVph6WA4voyj8LiJ2s4lsC1pSsG8gMtsVJSMr8JJHsl6yYnJJyf1e6STls/ilGrLmDqB1ZwlMAjxGp8f7qg5Gg8eJuCiIlAKFAxGT4B479PDPgrrsb+QdQObrCSLURdwpmYqo7R/+4DPbhaCj/chIOzHURgqts9uORSFKwXO1FGGh6lnbXG5hBVL90+vDwB7Kwi4ZwNWQdShpbePDpzLz9fSJpDNk6s1sbz4qN41XcCpvT6THp5Op7cAvTtEsSSBhYCt3vdk9/ni6M0EgF+Tbbln48CFfZo6QX2VZBUXohAYEVZz/Wewkv7cFe89tEzK2YD1/GaSIQC7XnG1AsvNXVW0PW8C2FUgksL9wegBEdfLAs8kU4PCDKxXgDKl26ywU9EmgMlJVGBp8l4ysA6FyUkwcP7gkbyHycWjBv5HYerazrh5UdgJQg1gYLY09zC1W6xxPLQAZn7T0k9apav8dwhwXg8r26vMwaOyJHhK85TmKV26nXhKG6Z06aq2fIHO/sfDVvcfTqlrVg5+LK8AAAAASUVORK5CYII=", 
+          "tooltipMeasures": [], 
+          "type": "multi_columns_lines", 
+          "uaColor": [], 
+          "uaSize": [], 
+          "uaTooltip": [], 
+          "uaXDimension": [], 
+          "uaYDimension": [], 
+          "userEditedName": true, 
+          "variant": "normal", 
+          "xAxisMode": "NORMAL", 
+          "xDimension": [], 
+          "xMeasure": [], 
+          "yAxisMode": "NORMAL", 
+          "yDimension": [], 
+          "yMeasure": []
+        }
+      }, 
+      {
+        "$$hashKey": "271", 
+        "chartOptions": {
+          "computeOptionsDisplayed": true, 
+          "enabledComputeModes": [
+            {
+              "label": "No computation", 
+              "shortLabel": "None", 
+              "value": "NONE"
+            }, 
+            {
+              "label": "Compute ratio of each value relative to average of values", 
+              "shortLabel": "Ratio to AVG", 
+              "value": "LIFT_AVG"
+            }
+          ], 
+          "enabledXAxisModes": [
+            {
+              "label": "Normal", 
+              "shortLabel": "Normal", 
+              "value": "NORMAL"
+            }, 
+            {
+              "label": "Cumulative values", 
+              "shortLabel": "Cumulative", 
+              "value": "CUMULATIVE"
+            }, 
+            {
+              "label": "Difference (replace each value by the diff to the previous one)", 
+              "shortLabel": "Difference", 
+              "value": "DIFFERENCE"
+            }
+          ], 
+          "enabledYAxisModes": [
+            {
+              "label": "Normal", 
+              "shortLabel": "Normal", 
+              "value": "NORMAL"
+            }, 
+            {
+              "label": "Logarithmic scale", 
+              "shortLabel": "Log", 
+              "value": "LOG"
+            }
+          ], 
+          "hAxisOptionsDisplayed": true, 
+          "legendChoice": true, 
+          "smoothingChoice": false, 
+          "vAxisOptionsDisplayed": true, 
+          "zeroEnabled": true
+        }, 
+        "data": {
+          "colorOptions": {
+            "colorPalette": "default", 
+            "singleColor": "#659a88", 
+            "transparency": 0.9
+          }, 
+          "filters": [], 
+          "genericDimension0": [
+            {
+              "column": "VMail_Plan", 
+              "filters": [], 
+              "generateOthersCategory": true, 
+              "isA": "dimension", 
+              "maxValues": 20, 
+              "possibleNewFilters": [
+                {
+                  "group": "Measure values", 
+                  "label": "Average of Churn", 
+                  "measureFilterId": 0, 
+                  "type": "MEASURE_VALUES"
+                }
+              ], 
+              "possibleSorts": [
+                {
+                  "label": "Natural ordering", 
+                  "sortAscending": true, 
+                  "type": "NATURAL"
+                }, 
+                {
+                  "label": "Average of Churn, descending", 
+                  "measureIdx": 0, 
+                  "type": "AGGREGATION"
+                }, 
+                {
+                  "label": "Average of Churn, ascending", 
+                  "measureIdx": 0, 
+                  "sortAscending": true, 
+                  "type": "AGGREGATION"
+                }
+              ], 
+              "sort": {
+                "label": "Average of Churn, descending", 
+                "measureIdx": 0, 
+                "type": "AGGREGATION"
+              }, 
+              "type": "ALPHANUM"
+            }
+          ], 
+          "genericDimension1": [], 
+          "genericMeasures": [
+            {
+              "column": "Churn", 
+              "displayAxis": "axis1", 
+              "displayType": "column", 
+              "displayed": true, 
+              "function": "AVG", 
+              "isA": "measure", 
+              "type": "NUMERICAL"
+            }
+          ], 
+          "includeZero": true, 
+          "name": "Avg. of Churn by VMail_Plan", 
+          "showLegend": true, 
+          "smoothing": true, 
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAx0lEQVRoQ+2Zyw2AIBBEpRFtSNuwBWqgBdvQhrQRjTFeULMQWKLxeV0+7jBvDmCqn30mtt/GTmvInNm10WuHrJs6JvqnaPhBck441YuZ5mNpSUgYhuFDAUJLYqVQndCShCa0CC1CS6KkaJ3QkuQmtAitPKFV23GQ3LbXF9f1IePOMa9lWAsdGpbsoaW8v6/WPpwwJ+wpoGU1LK10/w3DMAzDZd6WtMIRhmEYhmH4loLUlwdCK9PNCilNSksKfKwebemP9Xf53Q2DCuQpDqe2rgAAAABJRU5ErkJggg==", 
+          "type": "multi_columns_lines", 
+          "userEditedName": true, 
+          "variant": "normal"
+        }
+      }
+    ], 
+    "chartsEngine": "LINO", 
+    "coloring": {
+      "individualColumns": [], 
+      "scheme": "MEANING_AND_STATUS", 
+      "valueColoringMode": "HASH"
+    }, 
+    "columnsSelection": {
+      "mode": "ALL"
+    }, 
+    "explorationFilters": [], 
+    "explorationSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "maxRecords": 30000, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "HEAD_SEQUENTIAL", 
+        "targetRatio": 0.02
+      }
+    }, 
+    "exploreUIParams": {}, 
+    "globalSearchQuery": "", 
+    "previewMode": "ALL_ROWS", 
+    "steps": [], 
+    "tags": [], 
+    "vizSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false
+    }
+  }, 
+  "shortDesc": "", 
+  "tags": [], 
+  "versionTag": {
+    "lastModifiedBy": {
+      "displayName": "Administrator", 
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1468945431243, 
+    "versionNumber": 26
+  }
+}
