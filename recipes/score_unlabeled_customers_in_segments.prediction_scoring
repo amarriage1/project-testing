@@ -1,14 +1,16 @@
 {
-    "outputProbabilities": true, 
-    "keptInputColumns": [], 
-    "overrideModelSpecifiedThreshold": false, 
-    "filterInputColumns": false, 
-    "sparkParams": {
-        "pipelineAllowStart": null, 
-        "sparkPreparedDFStorageLevel": null, 
-        "sparkConf": null, 
-        "sparkRepartitionNonHDFS": null, 
-        "pipelineAllowMerge": null
-    }, 
-    "forcedClassifierThreshold": 0
+  "keptInputColumns": [],
+  "pythonBatchSize": 100000,
+  "filterInputColumns": false,
+  "outputProbabilities": true,
+  "forceOriginalEngine": true,
+  "individualExplanationParams": {
+    "subChunkSize": 5000,
+    "method": "ICE",
+    "shapleyBackgroundSize": 100,
+    "nbExplanations": 3
+  },
+  "forcedClassifierThreshold": 0,
+  "overrideModelSpecifiedThreshold": false,
+  "sparkParams": {}
 }
