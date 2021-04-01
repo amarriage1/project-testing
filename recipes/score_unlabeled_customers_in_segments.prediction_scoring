@@ -3,6 +3,7 @@
   "pythonBatchSize": 100000,
   "filterInputColumns": false,
   "outputProbabilities": true,
+  "engineType": "SPARK",
   "forceOriginalEngine": true,
   "individualExplanationParams": {
     "subChunkSize": 5000,
@@ -12,5 +13,11 @@
   },
   "forcedClassifierThreshold": 0,
   "overrideModelSpecifiedThreshold": false,
-  "sparkParams": {}
+  "outputExplanations": false,
+  "sparkParams": {
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default"
+    }
+  }
 }
