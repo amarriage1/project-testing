@@ -2,7 +2,19 @@
   "name": "nm",
   "type": "fsprovider_sharepoint-online_sharepoint-online_shared-documents",
   "params": {
-    "config": {},
+    "config": {
+      "sharepoint_oauth": {
+        "mode": "NONE"
+      },
+      "sharepoint_sharepy": {
+        "mode": "PRESET",
+        "name": "Preset 1"
+      },
+      "site_app_permissions": {
+        "mode": "NONE"
+      },
+      "auth_type": "login"
+    },
     "path": "/${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -88,11 +100,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630600378342
+    "lastModifiedOn": 1630600394776
   },
   "creationTag": {
     "versionNumber": 0,
