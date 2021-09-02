@@ -8,6 +8,35 @@
   },
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "includedDatasetsData": [
+        {
+          "name": "Shared_Documents",
+          "type": "fsprovider_sharepoint-online_sharepoint-online_shared-documents"
+        }
+      ],
+      "includedSavedModels": [],
+      "includedManagedFolders": [
+        {
+          "id": "lcuOwEGw",
+          "name": "nm"
+        }
+      ],
+      "shareAllInputDatasets": false
+    }
+  },
   "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -178,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1624025270440
+    "lastModifiedOn": 1630600537556
   },
   "creationTag": {
     "versionNumber": 0,
