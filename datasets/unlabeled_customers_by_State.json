@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630686667653
+    "lastModifiedOn": 1630686698271
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,10 @@
       {
         "name": "State",
         "type": "string"
+      },
+      {
+        "name": "Area Code_distinct",
+        "type": "bigint"
       },
       {
         "name": "count",
