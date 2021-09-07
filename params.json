@@ -115,7 +115,7 @@
       "python": {
         "mode": "EXPLICIT_ENV",
         "preventOverride": false,
-        "envName": "Python3ForNoteboook"
+        "envName": "andrew_python"
       },
       "r": {
         "mode": "INHERIT",
@@ -240,11 +240,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "andrew"
     },
-    "lastModifiedOn": 1631022191752
+    "lastModifiedOn": 1631022268307
   },
   "creationTag": {
     "versionNumber": 0,
