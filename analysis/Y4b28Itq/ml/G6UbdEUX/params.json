@@ -2050,8 +2050,8 @@
         "name": "Custom algo macro-plugin_algo",
         "params": {
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
@@ -2059,7 +2059,7 @@
           "loss": [
             "linear"
           ],
-          "random_state": 1337.0
+          "random_state": 1337
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
@@ -2072,8 +2072,8 @@
         "name": "Custom algo ml-assisted-labeling_pthon-blah",
         "params": {
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
@@ -2081,7 +2081,7 @@
           "loss": [
             "linear"
           ],
-          "random_state": 1337.0
+          "random_state": 1337
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
@@ -2094,8 +2094,8 @@
         "name": "Adaboost classifier",
         "params": {
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
@@ -2103,11 +2103,11 @@
           "loss": [
             "linear"
           ],
-          "random_state": 1337.0
+          "random_state": 1337
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
-        "enabled": false
+        "enabled": true
       }
     },
     "keras": {
