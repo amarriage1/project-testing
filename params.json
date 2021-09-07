@@ -21,19 +21,9 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "includedDatasetsData": [
-        {
-          "name": "Shared_Documents",
-          "type": "fsprovider_sharepoint-online_sharepoint-online_shared-documents"
-        }
-      ],
+      "includedDatasetsData": [],
       "includedSavedModels": [],
-      "includedManagedFolders": [
-        {
-          "id": "lcuOwEGw",
-          "name": "nm"
-        }
-      ],
+      "includedManagedFolders": [],
       "shareAllInputDatasets": false
     }
   },
@@ -240,11 +230,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
-      "login": "andrew"
+      "login": "admin"
     },
-    "lastModifiedOn": 1631022506567
+    "lastModifiedOn": 1631024252890
   },
   "creationTag": {
     "versionNumber": 0,
