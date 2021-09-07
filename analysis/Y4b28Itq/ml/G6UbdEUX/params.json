@@ -2086,6 +2086,28 @@
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
         "enabled": false
+      },
+      "CustomPyPredAlgo_adaboost-model_adaboost-model_adaboost-classifier": {
+        "pluginId": "adaboost-model",
+        "pluginVersion": "0.0.1",
+        "elementId": "adaboost-model_adaboost-classifier",
+        "name": "Adaboost classifier",
+        "params": {
+          "n_estimators": [
+            50.0,
+            100.0
+          ],
+          "learning_rate": [
+            0.2
+          ],
+          "loss": [
+            "linear"
+          ],
+          "random_state": 1337.0
+        },
+        "supportsSampleWeights": false,
+        "acceptsSparseMatrix": false,
+        "enabled": false
       }
     },
     "keras": {
