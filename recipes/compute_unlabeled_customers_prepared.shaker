@@ -26,8 +26,38 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Int\u0027l Plan",
+            "to": "IntlPlan"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(strval(IntlPlan)\u003d\u003d\"no\",\"False\",\"True\")",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +65,30 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Eve Calls": 100,
+    "Area Code": 100,
+    "Night Mins": 100,
+    "newcolumn_expression": 165,
+    "Intl Calls": 100,
+    "Account Length": 120,
+    "VMail Plan": 100,
+    "Day Mins": 100,
+    "IntlPlan": 100,
+    "Intl Mins": 100,
+    "Night Charge": 105,
+    "Eve Charge": 100,
+    "Night Calls": 100,
+    "State": 100,
+    "Phone": 100,
+    "VMail Message": 113,
+    "CustServ Calls": 120,
+    "Day Charge": 100,
+    "Day Calls": 100,
+    "Eve Mins": 100,
+    "Int\u0027l Plan": 100,
+    "Intl Charge": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
