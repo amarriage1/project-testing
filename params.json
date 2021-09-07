@@ -113,12 +113,14 @@
     },
     "codeEnvs": {
       "python": {
-        "mode": "INHERIT",
-        "preventOverride": false
+        "mode": "EXPLICIT_ENV",
+        "preventOverride": false,
+        "envName": "Python3ForNoteboook"
       },
       "r": {
         "mode": "INHERIT",
-        "preventOverride": false
+        "preventOverride": false,
+        "envName": "managed-r"
       },
       "julia": {
         "mode": "INHERIT",
@@ -238,11 +240,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "andrew"
     },
-    "lastModifiedOn": 1631021758930
+    "lastModifiedOn": 1631022191752
   },
   "creationTag": {
     "versionNumber": 0,
