@@ -52,7 +52,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "if(strval(IntlPlan)\u003d\u003d\"no\",\"False\",\"True\")",
+        "expression": "if(IntlPlan\u003d\u003d\"no\",\"False\",\"True\")",
         "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
