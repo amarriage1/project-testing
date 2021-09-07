@@ -56,7 +56,7 @@
     },
     {
       "group": "another_one",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -238,11 +238,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631021727519
+    "lastModifiedOn": 1631021758930
   },
   "creationTag": {
     "versionNumber": 0,
