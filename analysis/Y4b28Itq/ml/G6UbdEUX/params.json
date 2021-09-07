@@ -11,7 +11,7 @@
   "calibration": {
     "calibrationMethod": "NO_CALIBRATION"
   },
-  "guessPolicy": "ALGORITHMS",
+  "guessPolicy": "DEFAULT",
   "splitParams": {
     "ttPolicy": "SPLIT_SINGLE_DATASET",
     "ssdSplitMode": "RANDOM",
@@ -609,7 +609,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1140,7 +1140,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -2107,7 +2107,7 @@
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
-        "enabled": true
+        "enabled": false
       }
     },
     "keras": {
