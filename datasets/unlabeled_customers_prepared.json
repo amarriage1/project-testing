@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630689069454
+    "lastModifiedOn": 1631033894757
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,7 +103,11 @@
         "type": "string"
       },
       {
-        "name": "Int\u0027l Plan",
+        "name": "IntlPlan",
+        "type": "boolean"
+      },
+      {
+        "name": "newcolumn_expression",
         "type": "boolean"
       },
       {
