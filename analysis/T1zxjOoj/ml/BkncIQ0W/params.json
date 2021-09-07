@@ -2076,7 +2076,60 @@
       "optimizer": "BFGS"
     },
     "custom_python": [],
-    "plugin_python": {},
+    "plugin_python": {
+      "CustomPyPredAlgo_ebm-model_ebm-model_ebm-ml-model": {
+        "pluginId": "ebm-model",
+        "pluginVersion": "0.0.1",
+        "elementId": "ebm-model_ebm-ml-model",
+        "name": "Explainable Boosting Machine EBM Classifier",
+        "params": {
+          "feature_names": "none",
+          "feature_types": "none",
+          "max_bins": [
+            256.0
+          ],
+          "max_interaction_bins": [
+            32.0
+          ],
+          "interactions": [
+            10.0
+          ],
+          "outer_bags": [
+            8.0
+          ],
+          "inner_bags": [
+            0.0
+          ],
+          "learning_rate": [
+            0.201
+          ],
+          "validation_size": [
+            0.0
+          ],
+          "early_stopping_rounds": 50.0,
+          "early_stopping_tolerance": [
+            1.0E-4
+          ],
+          "max_rounds": 5000.0,
+          "min_samples_leaf": [
+            2.0
+          ],
+          "max_leaves": [
+            3.0
+          ],
+          "n_jobs": -2.0,
+          "binning": [
+            "quantile"
+          ],
+          "random_state": [
+            1337.0
+          ]
+        },
+        "supportsSampleWeights": false,
+        "acceptsSparseMatrix": false,
+        "enabled": false
+      }
+    },
     "keras": {
       "epochs": 10,
       "batchSize": 32,
