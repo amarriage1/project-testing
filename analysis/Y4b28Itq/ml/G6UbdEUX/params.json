@@ -11,7 +11,7 @@
   "calibration": {
     "calibrationMethod": "NO_CALIBRATION"
   },
-  "guessPolicy": "DEFAULT",
+  "guessPolicy": "PERFORMANCE",
   "splitParams": {
     "ttPolicy": "SPLIT_SINGLE_DATASET",
     "ssdSplitMode": "RANDOM",
@@ -541,7 +541,7 @@
           "scaling": "LINEAR"
         }
       },
-      "n_jobs": 1,
+      "n_jobs": 4,
       "max_tree_depth": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -550,6 +550,7 @@
         },
         "values": [
           6,
+          10,
           14
         ],
         "range": {
@@ -566,7 +567,10 @@
           "min": 1
         },
         "values": [
-          4
+          1,
+          5,
+          10,
+          25
         ],
         "range": {
           "min": 1,
@@ -575,7 +579,7 @@
           "scaling": "LINEAR"
         }
       },
-      "selection_mode": "auto",
+      "selection_mode": "prop",
       "max_features": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -600,7 +604,8 @@
           "max": 1.0
         },
         "values": [
-          0.3
+          0.2,
+          0.7
         ],
         "range": {
           "min": 0.1,
@@ -1140,7 +1145,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1523,7 +1528,8 @@
           "min": 1
         },
         "values": [
-          3
+          3,
+          10
         ],
         "range": {
           "min": 2,
@@ -1540,7 +1546,9 @@
           "max": 1.0
         },
         "values": [
-          0.2
+          0.1,
+          0.25,
+          0.4
         ],
         "range": {
           "min": 0.1,
@@ -1605,6 +1613,7 @@
           "max": 1.0
         },
         "values": [
+          0.75,
           1.0
         ],
         "range": {
@@ -1622,7 +1631,8 @@
           "max": 1.0
         },
         "values": [
-          1.0
+          0.6,
+          0.85
         ],
         "range": {
           "min": 0.5,
@@ -1723,7 +1733,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_learning_sparkling": {
       "enabled": false,
