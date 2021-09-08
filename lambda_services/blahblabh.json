@@ -11,7 +11,21 @@
           }
         }
       ],
-      "lookups": [],
+      "lookups": [
+        {
+          "datasetRef": "unlabeled_customers",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [
+            {
+              "resourceLookupCol": "State"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {}
+        }
+      ],
       "id": "whatever",
       "type": "DATASETS_LOOKUP"
     }
