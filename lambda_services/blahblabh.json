@@ -2,7 +2,15 @@
   "name": "blahblabh",
   "endpoints": [
     {
-      "testQueries": [],
+      "testQueries": [
+        {
+          "q": {
+            "data": {
+              "test": "hi"
+            }
+          }
+        }
+      ],
       "lookups": [],
       "id": "whatever",
       "type": "DATASETS_LOOKUP"
