@@ -23,7 +23,10 @@
           "missingLookupKeyBehavior": "IGNORE",
           "notFoundBehavior": "IGNORE",
           "multiMatchBehavior": "KEEP_FIRST",
-          "columnsMapping": {}
+          "columnsMapping": {
+            "State": "State",
+            "Area Code": "Area Code"
+          }
         }
       ],
       "id": "whatever",
