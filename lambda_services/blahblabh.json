@@ -1,5 +1,13 @@
 {
-  "endpoints": [],
+  "name": "blahblabh",
+  "endpoints": [
+    {
+      "testQueries": [],
+      "lookups": [],
+      "id": "whatever",
+      "type": "DATASETS_LOOKUP"
+    }
+  ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
