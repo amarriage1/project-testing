@@ -3,7 +3,66 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "clearOutputPartition": false
+    "clearOutputPartition": false,
+    "exportParams": {
+      "destinationType": "DOWNLOAD",
+      "temporaryFileBehavior": "AUTO",
+      "originatingOptionId": "tsv-excel-header",
+      "format": {
+        "type": "csv",
+        "params": {
+          "style": "excel",
+          "charset": "utf8",
+          "separator": ",",
+          "quoteChar": "\"",
+          "escapeChar": "\\",
+          "dateSerializationFormat": "ISO",
+          "arrayMapFormat": "json",
+          "hiveSeparators": [
+            "\u0002",
+            "\u0003",
+            "\u0004",
+            "\u0005",
+            "\u0006",
+            "\u0007",
+            "\b"
+          ],
+          "skipRowsBeforeHeader": 0,
+          "parseHeaderRow": true,
+          "skipRowsAfterHeader": 0,
+          "probableNumberOfRecords": 0,
+          "normalizeBooleans": false,
+          "normalizeDoubles": true,
+          "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+          "readMissingColumnsBehavior": "DISCARD_SILENT",
+          "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+          "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+          "fileReadFailureBehavior": "FAIL",
+          "compress": ""
+        }
+      },
+      "destinationDatasetProjectKey": "GIT_TEST",
+      "overwriteDestinationDataset": false,
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "selectedPartitions": [],
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    }
   },
   "customMeta": {
     "kv": {}
@@ -33,11 +92,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631211649473
+    "lastModifiedOn": 1631211651410
   },
   "creationTag": {
     "versionNumber": 0,
