@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631719814115
+    "lastModifiedOn": 1631719978552
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,41 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "unit",
+        "type": "string"
+      },
+      {
+        "name": "sourceVersion",
+        "type": "string"
+      },
+      {
+        "name": "endDate",
+        "type": "string"
+      },
+      {
+        "name": "sourceName",
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "creationDate",
+        "type": "string"
+      },
+      {
+        "name": "value",
+        "type": "double"
+      },
+      {
+        "name": "startDate",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
