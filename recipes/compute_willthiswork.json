@@ -29,20 +29,15 @@
   },
   "outputs": {
     "main_output": {
-      "items": [
-        {
-          "ref": "willthiswork",
-          "appendMode": false
-        }
-      ]
+      "items": []
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631719739923
+    "lastModifiedOn": 1631719812868
   },
   "creationTag": {
     "versionNumber": 0,
