@@ -3,7 +3,9 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "parameter1": "SELECT unit, \"sourceVersion\", \"endDate\", \"sourceName\", \"type\", \"creationDate\", value, \"startDate\"\nFROM public.\"HEALTH_hrv\";"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -36,11 +38,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631719623097
+    "lastModifiedOn": 1631719738774
   },
   "creationTag": {
     "versionNumber": 0,
