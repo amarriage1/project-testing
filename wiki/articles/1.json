@@ -1,13 +1,24 @@
 {
   "name": "weeeeee",
   "layout": "WIKI_ARTICLE",
-  "attachments": [],
+  "attachments": [
+    {
+      "attachmentType": "FILE",
+      "smartId": "AdPOL3Drmlg1",
+      "details": {
+        "objectDisplayName": "mystyle.css",
+        "size": 2052
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1631722009072
+    }
+  ],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631721795699
+    "lastModifiedOn": 1631722009072
   },
   "creationTag": {
     "versionNumber": 0,
