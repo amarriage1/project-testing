@@ -1,0 +1,17 @@
+{
+  "tags": {
+    "sample_project": {
+      "color": "#d66b9b"
+    },
+    "SAMPLE_PROJECT": {
+      "color": "#1ac2ab"
+    },
+    "sample": {
+      "color": "#2BB2AD"
+    },
+    "creator_admin": {
+      "color": "#1ac2ab"
+    },
+    "deleted": {}
+  }
+}
