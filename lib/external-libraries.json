@@ -1,11 +1,5 @@
 {
   "gitReferences": {
-    "p": {
-      "remote": "git@github.com:amarriage1/project-testing.git",
-      "checkout": "refs/heads/master",
-      "remotePath": "",
-      "lastHash": "094f27d51537f0b525c6d00dcfce5acfba63d9f8"
-    },
     "p2": {
       "remote": "git@github.com:amarriage1/project-testing.git",
       "checkout": "refs/heads/master",
@@ -15,7 +9,6 @@
   },
   "pythonPath": [
     "python",
-    "p",
     "p2"
   ],
   "rsrcPath": [
