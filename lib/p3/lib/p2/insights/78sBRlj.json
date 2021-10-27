@@ -1,0 +1,152 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "customers_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 30000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "scatter",
+      "variant": "normal",
+      "name": "Churner by Total_Charge and VMail_Message",
+      "userEditedName": true,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "genericMeasures": [],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [
+        {
+          "column": "Total_Charge",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaYDimension": [
+        {
+          "column": "VMail_Message",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [
+        {
+          "column": "Churn",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "adminLevel": 0
+        }
+      ],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "VMail_Plan",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "___dku_no_value___": true
+          },
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": false,
+      "showLegend": true,
+      "showXAxis": false,
+      "strokeWidth": 1,
+      "hexbinRadius": 20,
+      "hexbinNumber": 0,
+      "colorOptions": {
+        "singleColor": "#659a88",
+        "transparency": 0.9,
+        "colorPalette": "gyr1",
+        "ccScaleMode": "NORMAL"
+      },
+      "colorPaletteType": "LINEAR",
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "mapquest-std",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.6,
+        "gridLatDeg": 0.6
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAD+klEQVRoQ+1aW4gbZRQ+ZxJSrSY5w2Kta8EtXXVBqMWambZKffK2L775oj74UARFunTZzIJXxIedWTdvXtAHKV4Q662Fqk8+Se1MrFAf7IXWtljWamXnTNLGbWnmyARGQpxtM5vZkHUzL0n+nNv3fT//f/4/QVhhD64wvNAH/H9XvGcVzh3MPVXZUvkgaQEagIvF4mHLsu5OOngvxutZhZeKrMQBU5lKXOBdUQWrtvqDq7tbw+/Ipn2CclEB5YFgzNXcweCVbDrNOg+pjjobjiVFQOKAkypsqeJcFXBchqlMj3GB97YWG8Zpjhe898EfqKfr6y7cc+F86NNsQw6dYY1vi/JfLCF9heMy96eqzq5x3cHcgdwwpOGhFKReFJFLgDDLGt9HDp1gjYeDuKFS5FCNNV7dmotsOs8635Skoq05GgobhnHWNM11ccEuR/v+lF6UakchCyNQ/c9iVVbf8cUf8jTvEXLoQ9b4SXLoPdZ4R76cfxsFjyi+8sXclrmzAoCqTW+wzuNBnLydf8vTvWefsOj9j4r89KLqinDqKxzZMCyiASCbTgnIxwj4DCJePvYwQLC4kUM/IeAtIjKPiKtaGwsqUxUFq8E4OVRnjVNRW1awsAnK51zg5+Oo31c4DlsLzQYf/Ve9gvduo0106DgC3tjcOgbqhJ9PryXetBd2ss67m7euKFWb850CuG49wHzcesPTkm9ZVjB1JG6A5Wbf1SmdLWfvrBaqx1RH/drV3NHGDLDpK0QccTV3JCQv7+S/8TTvUSrTbvHlgO/7v1e3VvclQW5XASdRcKcx+oA7ZZBsOs4639G66DS2EZH9ft03Ktsqc+ECJSLPAcLrrPFdneZux7+vcDssLWTTesoJT1Kt9sHJqrKtcqIx/imk4HGod5I3jm+4Le0HgActy8rEcV6Otl2f0kHLyTqvbyar3ZsVcugka7yhE6K7DriTYpPw/RfwxMTEhunp6ZNJBO3lGF1VmGwqsR59hdstkroKuFugrpZnZQIeHx/fPDMzc6gXFFjqGlamwkvNai/Fv6bC2R+z99eV+q+1VbW/6CJ9BwB7AOB2QWEU3Dh8BoaqN8DA9jJk9owC5CtQ87IwuPEIKLm/Eb/fLLB6HsQHwCspgJfeBHhlJzT+etC4bUAQ9AH1wwAHNwFoPwOcWwPw29qGwRUBuJSuQ+aXUbgMIjVBTCsi3/qI1/sin6QRX0Df31FXlFtvZv7yj1yupCAeVQDmBjzvs5Ds4FYUAeSagHtJnSRqaQuwYRi7TNMsLZTQMIySaZqRP5EWi8XXLMt6OcrXMIxzpmkGWsZ+xsbGKJPJbLcsK+omBCcnJ++dmpoqtwZuC3DsanrY4R9W6Ks4df7bvQAAAABJRU5ErkJggg\u003d\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true
+    }
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Churner by Total_Charge and VMail_Message",
+  "dashboardCreationId": "4A29MtD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202175
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202175
+  },
+  "description": "",
+  "shortDesc": "",
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "dmge3f83ux": [
+      {
+        "mode": "SQL",
+        "id": "n2ndljjuPZu0",
+        "runOn": 1631023721743,
+        "runIn": 77,
+        "runBy": "admin",
+        "connection": "NewPG",
+        "state": "FAILED",
+        "futureId": "Rtn9wg6L",
+        "hash": "c133e9f6ca8c42777de8776b0586c9a7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select * from lol",
+        "expandedSql": "Select * from lol"
+      }
+    ]
+  }
+}

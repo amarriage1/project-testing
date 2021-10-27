@@ -1,0 +1,45 @@
+{
+  "name": "blahblabh",
+  "endpoints": [
+    {
+      "testQueries": [
+        {
+          "q": {
+            "data": {
+              "test": "hi"
+            }
+          }
+        }
+      ],
+      "lookups": [
+        {
+          "datasetRef": "unlabeled_customers",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [
+            {
+              "resourceLookupCol": "State"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {
+            "State": "State",
+            "Area Code": "Area Code"
+          }
+        }
+      ],
+      "id": "whatever",
+      "type": "DATASETS_LOOKUP"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

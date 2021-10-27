@@ -5,18 +5,11 @@
       "checkout": "refs/heads/master",
       "remotePath": "",
       "lastHash": "094f27d51537f0b525c6d00dcfce5acfba63d9f8"
-    },
-    "p3": {
-      "remote": "git@github.com:amarriage1/project-testing.git",
-      "checkout": "refs/heads/testing",
-      "remotePath": "",
-      "lastHash": "f3c1cec126de41a5ed35782d377ed18413fc08f8"
     }
   },
   "pythonPath": [
     "python",
-    "p2",
-    "p3"
+    "p2"
   ],
   "rsrcPath": [
     "R"
