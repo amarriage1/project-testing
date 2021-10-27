@@ -9,7 +9,8 @@
     "p2": {
       "remote": "git@github.com:amarriage1/project-testing.git",
       "checkout": "refs/heads/master",
-      "remotePath": ""
+      "remotePath": "",
+      "lastHash": "094f27d51537f0b525c6d00dcfce5acfba63d9f8"
     }
   },
   "pythonPath": [

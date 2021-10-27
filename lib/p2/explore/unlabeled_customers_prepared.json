@@ -1,0 +1,34 @@
+{
+    "charts": [
+        {
+            "refreshableSelection": {
+                "autoRefreshSample": false, 
+                "selection": {
+                    "maxRecords": 30000, 
+                    "partitionSelectionMethod": "ALL", 
+                    "targetRatio": 0.02, 
+                    "samplingMethod": "HEAD_SEQUENTIAL"
+                }, 
+                "_refreshTrigger": 0
+            }, 
+            "def": {
+                "userEditedName": true, 
+                "showLegend": true, 
+                "genericDimension1": [], 
+                "name": "Chart", 
+                "genericDimension0": [], 
+                "genericMeasures": [], 
+                "variant": "normal", 
+                "smoothing": false, 
+                "filters": [], 
+                "includeZero": true, 
+                "type": "multi_columns_lines", 
+                "colorOptions": {
+                    "singleColor": "#659a88", 
+                    "transparency": 0.9, 
+                    "colorPalette": "default"
+                }
+            }
+        }
+    ]
+}
