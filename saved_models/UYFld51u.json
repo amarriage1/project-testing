@@ -1,0 +1,250 @@
+{
+    "checklists": {
+        "checklists": []
+    }, 
+    "publishPolicy": "UNCONDITIONAL", 
+    "rebuildBehavior": "EXPLICIT", 
+    "name": "Segments model (KMEANS)", 
+    "versionTag": {
+        "lastModifiedBy": {
+            "login": "admin"
+        }, 
+        "lastModifiedOn": 1552407175331, 
+        "versionNumber": 7
+    }, 
+    "tags": [], 
+    "miniTask": {
+        "maxConcurrentModelTraining": 2, 
+        "sparkCheckpoint": "NONE", 
+        "predictionDisplayScript": {
+            "maxProcessedMemTableBytes": -1, 
+            "sorting": [], 
+            "columnsSelection": {
+                "mode": "ALL"
+            }, 
+            "analysisColumnData": {}, 
+            "exploreUIParams": {}, 
+            "vizSampling": {
+                "autoRefreshSample": false, 
+                "_refreshTrigger": 0
+            }, 
+            "coloring": {
+                "scheme": "MEANING_AND_STATUS", 
+                "valueColoringMode": "HASH", 
+                "individualColumns": []
+            }, 
+            "steps": [], 
+            "globalSearchQuery": "", 
+            "previewMode": "ALL_ROWS", 
+            "explorationSampling": {
+                "autoRefreshSample": false, 
+                "selection": {
+                    "targetRatio": 0.02, 
+                    "maxReadUncompressedBytes": -1, 
+                    "ordering": {
+                        "rules": [], 
+                        "enabled": false
+                    }, 
+                    "latestPartitionsN": 1, 
+                    "filter": {
+                        "distinct": false, 
+                        "enabled": false
+                    }, 
+                    "withinFirstN": -1, 
+                    "maxRecords": 10000, 
+                    "partitionSelectionMethod": "ALL", 
+                    "maxStoredBytes": -1, 
+                    "samplingMethod": "HEAD_SEQUENTIAL"
+                }, 
+                "_refreshTrigger": 0
+            }, 
+            "explorationFilters": []
+        }, 
+        "backendType": "PY_MEMORY", 
+        "predictionDisplayCharts": [], 
+        "sparkParams": {
+            "sparkUseGlobalMetastore": false, 
+            "sparkExecutionEngine": "SPARK_SUBMIT", 
+            "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK", 
+            "pipelineAllowMerge": true, 
+            "pipelineAllowStart": true, 
+            "sparkRepartitionNonHDFS": 1
+        }, 
+        "containerSelection": {
+            "containerMode": "INHERIT"
+        }, 
+        "envSelection": {
+            "envMode": "INHERIT"
+        }, 
+        "taskType": "CLUSTERING", 
+        "modeling": {
+            "custom_mllib": [], 
+            "db_scan_clustering": {
+                "epsilon": [], 
+                "enabled": false, 
+                "min_sample_ratio": 0.0
+            }, 
+            "two_step": {
+                "kmeans_k": 50, 
+                "seed": 1337, 
+                "enabled": false, 
+                "n_clusters": 5, 
+                "max_iterations": 30
+            }, 
+            "isolation_forest": {
+                "max_samples": 0.5, 
+                "k": 2, 
+                "bootstrap": true, 
+                "enabled": false, 
+                "max_anomalies": 100, 
+                "n_estimators": 100, 
+                "n_samples": 256, 
+                "max_features": 1.0, 
+                "max_depth": 15, 
+                "contamination": 0.05
+            }, 
+            "mllib_kmeans_clustering": {
+                "k": [
+                    5
+                ], 
+                "seed": 1337, 
+                "enabled": false, 
+                "max_iterations": 0
+            }, 
+            "metrics": {
+                "evaluationMetric": "SILHOUETTE", 
+                "customEvaluationMetricGIB": true
+            }, 
+            "mini_batch_kmeans_clustering": {
+                "k": [
+                    5
+                ], 
+                "seed": 1337, 
+                "enabled": false
+            }, 
+            "spectral_clustering": {
+                "affinity_nearest_neighbors": false, 
+                "affinity_polynomial": true, 
+                "k": [
+                    5
+                ], 
+                "enabled": false, 
+                "seed": 1337, 
+                "affinity_rbf": false, 
+                "coef0": 0.0, 
+                "gamma": [
+                    0.0
+                ], 
+                "affinity_sigmoid": false
+            }, 
+            "mllib_gaussian_mixture_clustering": {
+                "k": [
+                    5
+                ], 
+                "seed": 1337, 
+                "enabled": false, 
+                "max_iterations": 0
+            }, 
+            "gmm_clustering": {
+                "k": [
+                    5
+                ], 
+                "seed": 1337, 
+                "enabled": false, 
+                "max_iterations": 0
+            }, 
+            "h2o_kmeans": {
+                "k": [
+                    5
+                ], 
+                "seed": 1337, 
+                "enabled": false, 
+                "max_iterations": 0
+            }, 
+            "custom_python": [], 
+            "ward_clustering": {
+                "k": [
+                    5
+                ], 
+                "enabled": false
+            }, 
+            "vertica_kmeans_clustering": {
+                "epsilon": [
+                    0.0001
+                ], 
+                "k": [
+                    5
+                ], 
+                "enabled": false, 
+                "max_iterations": 50
+            }, 
+            "kmeans_clustering": {
+                "k": [
+                    5
+                ], 
+                "seed": 1337, 
+                "enabled": false, 
+                "n_jobs": 2
+            }
+        }, 
+        "guessPolicy": "KMEANS"
+    }, 
+    "metrics": {
+        "engineConfig": {
+            "python": {}, 
+            "basic": {}, 
+            "dss": {
+                "active": true, 
+                "selection": {
+                    "targetRatio": 0.02, 
+                    "maxReadUncompressedBytes": -1, 
+                    "ordering": {
+                        "rules": [], 
+                        "enabled": false
+                    }, 
+                    "latestPartitionsN": 1, 
+                    "filter": {
+                        "distinct": false, 
+                        "enabled": false
+                    }, 
+                    "withinFirstN": -1, 
+                    "maxRecords": 10000, 
+                    "partitionSelectionMethod": "ALL", 
+                    "useMemTable": false, 
+                    "samplingMethod": "FULL"
+                }
+            }, 
+            "hive": {
+                "active": true, 
+                "extraConf": []
+            }, 
+            "sql": {
+                "active": true
+            }, 
+            "spark": {
+                "active": true, 
+                "extraConf": []
+            }, 
+            "impala": {
+                "active": true
+            }, 
+            "padRunsWithMetrics": false
+        }, 
+        "displayedState": {
+            "metrics": [], 
+            "columns": []
+        }, 
+        "probes": []
+    }, 
+    "metricsChecks": {
+        "runOnBuild": false, 
+        "checks": [], 
+        "displayedState": {
+            "checks": []
+        }
+    }, 
+    "lastExportedFrom": "A-DKU_CHURN-To45m4yi-IRL6lq6i-s11-pp1-m2", 
+    "customFields": {}, 
+    "conditionalOutputs": [], 
+    "activeVersion": "1552407159013"
+}
