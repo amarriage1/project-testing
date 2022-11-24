@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "irene"
     },
-    "lastModifiedOn": 1669303675010
+    "lastModifiedOn": 1669303687862
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,7 +86,37 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"State","type":"string"},
+      {"name":"Account_Length","type":"double"},
+      {"name":"Area_Code","type":"double"},
+      {"name":"Phone","type":"string"},
+      {"name":"Intl_Plan","type":"boolean"},
+      {"name":"VMail_Plan","type":"boolean"},
+      {"name":"VMail_Message","type":"double"},
+      {"name":"Day_Mins","type":"double"},
+      {"name":"Day_Calls","type":"double"},
+      {"name":"Day_Charge","type":"double"},
+      {"name":"Eve_Mins","type":"double"},
+      {"name":"Eve_Calls","type":"double"},
+      {"name":"Eve_Charge","type":"double"},
+      {"name":"Night_Mins","type":"double"},
+      {"name":"Night_Calls","type":"double"},
+      {"name":"Night_Charge","type":"double"},
+      {"name":"Intl_Mins","type":"double"},
+      {"name":"total_Mins","type":"double"},
+      {"name":"Intl_Calls","type":"double"},
+      {"name":"Intl_Charge","type":"double"},
+      {"name":"Total_Charge","type":"double"},
+      {"name":"ratio_charge_min","type":"double"},
+      {"name":"CustServ_Calls","type":"double"},
+      {"name":"Churn","type":"bigint"},
+      {"name":"cluster_labels","type":"string"},
+      {"name":"proba_0","type":"double"},
+      {"name":"proba_1","type":"double"},
+      {"name":"prediction","type":"string"},
+      {"name":"prediction_correct","type":"boolean"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
