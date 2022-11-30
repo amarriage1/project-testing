@@ -3,18 +3,18 @@
   "name": "what",
   "active": false,
   "creationTag": {
-    "versionNumber": 2,
-    "lastModifiedBy": {
-      "login": "irene"
-    },
-    "lastModifiedOn": 1669822864630
-  },
-  "versionTag": {
     "versionNumber": 3,
     "lastModifiedBy": {
       "login": "irene"
     },
     "lastModifiedOn": 1669822914408
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "irene"
+    },
+    "lastModifiedOn": 1669822933362
   },
   "checklists": {
     "checklists": []
@@ -64,7 +64,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "# this part can be used in a custom scenario\u0027s script, or in a \"Execute python\" step in a step-based scenario\nimport dataiku\nfrom dataiku.scenario import Scenario\n\ns \u003d Scenario()\n\ns.set_scenario_variables(partition_list\u003dpartition_list_value)\n\nprint partition_list_value\n",
+          "script": "# this part can be used in a custom scenario\u0027s script, or in a \"Execute python\" step in a step-based scenario\nimport dataiku\nfrom dataiku.scenario import Scenario\n\ns \u003d Scenario()\n\nss \u003d s.get_scenario_variables(partition_list)\n\nprint ss\n",
           "envSelection": {
             "envMode": "INHERIT"
           },
