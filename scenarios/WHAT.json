@@ -10,11 +10,11 @@
     "lastModifiedOn": 1669822644328
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "irene"
     },
-    "lastModifiedOn": 1669822644328
+    "lastModifiedOn": 1669822674284
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,29 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "custom_python_U1HkLFIbdeM5juL5pN/erQ",
+        "type": "custom_python",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "# this part can be used in a custom scenario\u0027s script, or in a \"Execute python\" step in a step-based scenario\nimport dataiku\nfrom dataiku.scenario import Scenario\n\ns \u003d Scenario()\n\n#SET DATASET NAMES\ndataset \u003d \u0027customers\u0027\n\n# Get partitions in new set that aren\u0027t in old set\npartitions_to_build \u003d dataiku.Dataset(dataset).list_partitions()\n\n# build the variable\u0027s value as a comma separated string\npartition_list_value \u003d \u0027,\u0027.join(partitions_to_build)\ns.set_scenario_variables(partition_list\u003dpartition_list_value)\n\nprint partition_list_value\n\n# in a step-based scenario:\n# add a build step to build the output dataset, and set ${partition_list} as the partition identifier\n\n# in a custom scenario:\n# launch the build\n# alternatively, in a custom scenario, you can pass the value directly, without using a variable\n#s.build_dataset(output_name, partitions\u003dpartition_list_value)",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
