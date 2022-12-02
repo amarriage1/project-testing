@@ -30,4 +30,5 @@ class MyRunnable(Runnable):
         The progress_callback is a function expecting 1 value: current progress
         """
         raise Exception("unimplemented")
+        return var1
         
