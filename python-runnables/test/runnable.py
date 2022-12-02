@@ -22,6 +22,9 @@ class MyRunnable(Runnable):
         return None
 
     def run(self, progress_callback):
+        var1 = get_macro_config()['parameter1']
+        
+        print(var1)
         """
         Do stuff here. Can return a string or raise an exception.
         The progress_callback is a function expecting 1 value: current progress
