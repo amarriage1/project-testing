@@ -22,7 +22,7 @@ class MyRunnable(Runnable):
         return None
 
     def run(self, progress_callback):
-        var1 = get_macro_config()['parameter1']
+        var1 = self.config()['parameter1']
         
         print(var1)
         """
