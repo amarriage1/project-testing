@@ -1,0 +1,55 @@
+{
+  "owner": "irene",
+  "name": "label_metrics",
+  "type": "OBJECT_DETECTION",
+  "inputs": {
+    "metadata": {
+      "items": [
+        {
+          "ref": "metrics"
+        }
+      ]
+    },
+    "data": {
+      "items": [
+        {
+          "ref": "M9URiu3P"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "what"
+        }
+      ]
+    }
+  },
+  "classes": [],
+  "instructions": "",
+  "minNbAnnotatorsPerRecord": 1,
+  "autoValidateAnswers": false,
+  "objectDetectionIOUConflictThreshold": 0.7,
+  "permissions": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "irene"
+    },
+    "lastModifiedOn": 1670273136081
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "irene"
+    },
+    "lastModifiedOn": 1670273136081
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
