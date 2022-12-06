@@ -3,7 +3,13 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "output_model_path": "/model.onnx",
+      "overwrite_output_model": false,
+      "show_batch_size": false,
+      "batch_size": "50",
+      "float_32": true
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +43,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "irene"
     },
-    "lastModifiedOn": 1670338587801
+    "lastModifiedOn": 1670338590556
   },
   "creationTag": {
     "versionNumber": 0,
