@@ -3,18 +3,18 @@
   "name": "what",
   "active": false,
   "creationTag": {
-    "versionNumber": 7,
-    "lastModifiedBy": {
-      "login": "irene"
-    },
-    "lastModifiedOn": 1669823035077
-  },
-  "versionTag": {
     "versionNumber": 8,
     "lastModifiedBy": {
       "login": "irene"
     },
     "lastModifiedOn": 1669823122702
+  },
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "irene"
+    },
+    "lastModifiedOn": 1670343372453
   },
   "checklists": {
     "checklists": []
@@ -64,7 +64,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "# this part can be used in a custom scenario\u0027s script, or in a \"Execute python\" step in a step-based scenario\nimport dataiku\nfrom dataiku.scenario import Scenario\n\ns \u003d Scenario()\n\nss \u003d s.get_all_variables()[\"partition_list\"]\n\nprint(ss)\n",
+          "script": "import dataiku\nimport numpy as np\n# Code sample to build several datasets in a scenario step\nfrom dataiku.scenario import Scenario\n\nclient \u003d dataiku.api_client()\nscenario \u003d Scenario()\nproject \u003d client.get_project(\"Your Project Key\")\n\n#Doesn\u0027t matter that we use the channel id \"slack-\"\n#If we don\u0027t want to use this specific global channel in send(), need to specific useGlobalChannel\u003dFalse)\nsender \u003d scenario.get_message_sender(channel_id\u003d\"YOUR MESSAGE CHANNEL ID\")\n\nmessage \u003d  \"You have a new ticket %s from %s, %s\\n\u003e *\u003c%s|%s\u003e* \\n\\n\" % (ticketId, company, userId, ticketUrl, subject)\n\nsender.send(\n    username\u003d\"your user name\",\n    message\u003dmessage,\n    mode\u003d\"WEBHOOK\",\n    webhookUrl\u003d\u0027YOUR WEBHOOK URL\u0027\n    useGlobalChannel\u003dFalse\n            )",
           "envSelection": {
             "envMode": "INHERIT"
           },
