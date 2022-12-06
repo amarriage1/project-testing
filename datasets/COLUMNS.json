@@ -1,0 +1,192 @@
+{
+  "type": "Snowflake",
+  "managed": false,
+  "featureGroup": false,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "irene"
+    },
+    "lastModifiedOn": 1670348763811
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "irene"
+    },
+    "lastModifiedOn": 1670348763811
+  },
+  "tags": [],
+  "params": {
+    "connection": "snowflake",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "catalog": "INTEGRATION_TESTS",
+    "table": "COLUMNS",
+    "schema": "INFORMATION_SCHEMA",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"TABLE_CATALOG","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"TABLE_SCHEMA","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"TABLE_NAME","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"COLUMN_NAME","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"ORDINAL_POSITION","type":"bigint","originalType":"NUMBER"},
+      {"name":"COLUMN_DEFAULT","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"IS_NULLABLE","type":"string","originalType":"VARCHAR","maxLength":3},
+      {"name":"DATA_TYPE","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"CHARACTER_MAXIMUM_LENGTH","type":"bigint","originalType":"NUMBER"},
+      {"name":"CHARACTER_OCTET_LENGTH","type":"bigint","originalType":"NUMBER"},
+      {"name":"NUMERIC_PRECISION","type":"bigint","originalType":"NUMBER"},
+      {"name":"NUMERIC_PRECISION_RADIX","type":"bigint","originalType":"NUMBER"},
+      {"name":"NUMERIC_SCALE","type":"bigint","originalType":"NUMBER"},
+      {"name":"DATETIME_PRECISION","type":"bigint","originalType":"NUMBER"},
+      {"name":"INTERVAL_TYPE","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"INTERVAL_PRECISION","type":"bigint","originalType":"NUMBER"},
+      {"name":"CHARACTER_SET_CATALOG","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"CHARACTER_SET_SCHEMA","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"CHARACTER_SET_NAME","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"COLLATION_CATALOG","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"COLLATION_SCHEMA","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"COLLATION_NAME","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"DOMAIN_CATALOG","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"DOMAIN_SCHEMA","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"DOMAIN_NAME","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"UDT_CATALOG","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"UDT_SCHEMA","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"UDT_NAME","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"SCOPE_CATALOG","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"SCOPE_SCHEMA","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"SCOPE_NAME","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"MAXIMUM_CARDINALITY","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"DTD_IDENTIFIER","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"IS_SELF_REFERENCING","type":"string","originalType":"VARCHAR","maxLength":2},
+      {"name":"IS_IDENTITY","type":"string","originalType":"VARCHAR","maxLength":3},
+      {"name":"IDENTITY_GENERATION","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"IDENTITY_START","type":"bigint","originalType":"NUMBER"},
+      {"name":"IDENTITY_INCREMENT","type":"bigint","originalType":"NUMBER"},
+      {"name":"IDENTITY_MAXIMUM","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"IDENTITY_MINIMUM","type":"string","originalType":"VARCHAR","maxLength":4194304},
+      {"name":"IDENTITY_CYCLE","type":"string","originalType":"VARCHAR","maxLength":16777216},
+      {"name":"COMMENT","type":"string","originalType":"VARCHAR","maxLength":16777216}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {
+    "gdpr_contains_personal_data": "UNSURE"
+  }
+}
