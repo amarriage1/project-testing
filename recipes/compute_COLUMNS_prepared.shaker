@@ -28,8 +28,28 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "NumericalFormatConverter",
+      "params": {
+        "inFormat": "RAW",
+        "outCol": "",
+        "columns": [
+          "CHARACTER_MAXIMUM_LENGTH"
+        ],
+        "outFormat": "EN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -55,7 +75,50 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "TABLE_NAME": 300,
+    "SCOPE_CATALOG": 113,
+    "UDT_NAME": 100,
+    "COLUMN_NAME": 211,
+    "IS_IDENTITY": 100,
+    "COMMENT": 100,
+    "NUMERIC_PRECISION": 143,
+    "NUMERIC_PRECISION_RADIX": 188,
+    "IDENTITY_MAXIMUM": 135,
+    "COLLATION_NAME": 120,
+    "INTERVAL_PRECISION": 150,
+    "SCOPE_SCHEMA": 105,
+    "IDENTITY_CYCLE": 120,
+    "COLLATION_CATALOG": 143,
+    "CHARACTER_MAXIMUM_LENGTH": 195,
+    "MAXIMUM_CARDINALITY": 158,
+    "IDENTITY_INCREMENT": 150,
+    "DATA_TYPE": 100,
+    "CHARACTER_SET_NAME": 150,
+    "INTERVAL_TYPE": 113,
+    "CHARACTER_SET_SCHEMA": 165,
+    "DOMAIN_CATALOG": 120,
+    "TABLE_CATALOG": 141,
+    "IS_NULLABLE": 100,
+    "COLLATION_SCHEMA": 135,
+    "TABLE_SCHEMA": 218,
+    "IS_SELF_REFERENCING": 158,
+    "CHARACTER_SET_CATALOG": 173,
+    "CHARACTER_OCTET_LENGTH": 180,
+    "IDENTITY_MINIMUM": 135,
+    "DOMAIN_NAME": 100,
+    "UDT_SCHEMA": 100,
+    "DOMAIN_SCHEMA": 113,
+    "DATETIME_PRECISION": 150,
+    "SCOPE_NAME": 100,
+    "NUMERIC_SCALE": 113,
+    "IDENTITY_GENERATION": 158,
+    "ORDINAL_POSITION": 135,
+    "IDENTITY_START": 120,
+    "DTD_IDENTIFIER": 120,
+    "COLUMN_DEFAULT": 120,
+    "UDT_CATALOG": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
