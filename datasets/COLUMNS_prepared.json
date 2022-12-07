@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "irene"
     },
-    "lastModifiedOn": 1670449327743
+    "lastModifiedOn": 1670449562376
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,7 +68,7 @@
       {"name":"COLUMN_DEFAULT","type":"string","maxLength":16777216},
       {"name":"IS_NULLABLE","type":"string","maxLength":3},
       {"name":"DATA_TYPE","type":"string","maxLength":16777216},
-      {"name":"CHARACTER_MAXIMUM_LENGTH","type":"bigint"},
+      {"name":"CHARACTER_MAXIMUM_LENGTH","type":"double"},
       {"name":"CHARACTER_OCTET_LENGTH","type":"bigint"},
       {"name":"NUMERIC_PRECISION","type":"bigint"},
       {"name":"NUMERIC_PRECISION_RADIX","type":"bigint"},
