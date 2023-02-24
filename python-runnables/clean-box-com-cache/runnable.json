@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "label": "Clean Box.com cache",
+        "description": "Clean the cache of the DSS Box.com connector",
+        "icon": "icon-cloud"
+    },
+    "impersonate": false,
+    "params": [
+        {
+            "name": "box_com_connection",
+            "label": "Connection",
+            "type": "PRESET",
+            "parameterSetId": "box-set-id"
+        }
+    ],
+    "permissions": [],
+    "resultType": "HTML",
+    "resultLabel": "Done !",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "macroRoles": [
+        {
+            "type": "PROJECT_MACROS"
+        }
+    ]
+}

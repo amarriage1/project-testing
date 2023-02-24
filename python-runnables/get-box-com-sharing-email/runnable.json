@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "label": "Get Box.com sharing email",
+        "description": "Retrieves your Box.com DSS app's email address",
+        "icon": "icon-cloud"
+    },
+    "impersonate": false,
+    "params": [
+        {
+            "name": "box_com_connection",
+            "label": "Connection",
+            "type": "PRESET",
+            "parameterSetId": "box-set-id"
+        }
+    ],
+    "permissions": [],
+    "resultType": "HTML",
+    "resultLabel": "Box.com DSS app sharing email address",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "macroRoles": [
+        {
+            "type": "PROJECT_MACROS"
+        }
+    ]
+}
