@@ -50,12 +50,22 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(isNull(strval(\"SETTLEMENT NUMBER\")), val(\"TICKET APPLIED QUANTITY - ORIGINAL\"), 0)",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
         "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
