@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1677526943687
+    "lastModifiedOn": 1677527133303
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,6 +66,8 @@
       {"name":"COLUMN_NAME","type":"string","maxLength":16777216},
       {"name":"ORDINAL_POSITION","type":"bigint"},
       {"name":"COLUMN_DEFAULT","type":"string","maxLength":16777216},
+      {"name":"newcolumn_expression","type":"bigint","maxLength":4194304},
+      {"name":"newcolumn_expression2","type":"double","meaning":"DoubleMeaning","maxLength":4194304},
       {"name":"IS_NULLABLE","type":"string","maxLength":3},
       {"name":"DATA_TYPE","type":"string","maxLength":16777216},
       {"name":"CHARACTER_MAXIMUM_LENGTH","type":"double"},
@@ -101,9 +103,7 @@
       {"name":"IDENTITY_MAXIMUM","type":"string","maxLength":4194304},
       {"name":"IDENTITY_MINIMUM","type":"string","maxLength":4194304},
       {"name":"IDENTITY_CYCLE","type":"string","maxLength":16777216},
-      {"name":"COMMENT","type":"string","maxLength":16777216},
-      {"name":"newcolumn_expression","type":"string","maxLength":4194304},
-      {"name":"newcolumn_expression2","type":"string","maxLength":4194304}
+      {"name":"COMMENT","type":"string","maxLength":16777216}
     ],
     "userModified": true
   },
