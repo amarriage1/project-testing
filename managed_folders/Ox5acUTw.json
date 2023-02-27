@@ -3,7 +3,7 @@
   "type": "Filesystem",
   "params": {
     "connection": "filesystem_folders",
-    "path": "/${projectKey}/${odbId}",
+    "path": "/DKU_CHURN/Ox5acUTw",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "irene"
     },
-    "lastModifiedOn": 1677509764443
+    "lastModifiedOn": 1677510095859
   },
   "creationTag": {
     "versionNumber": 0,
