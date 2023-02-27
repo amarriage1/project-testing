@@ -1,11 +1,8 @@
 {
   "name": "wat",
-  "type": "S3",
+  "type": "Filesystem",
   "params": {
-    "bucket": "andrewm-test-bucket",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "${odbId}",
-    "connection": "S3",
+    "connection": "filesystem_folders",
     "path": "/${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -91,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1677509705093
+    "lastModifiedOn": 1677509764443
   },
   "creationTag": {
     "versionNumber": 0,
