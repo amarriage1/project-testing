@@ -1,9 +1,8 @@
 {
   "name": "s3_out",
-  "type": "S3",
+  "type": "Filesystem",
   "params": {
-    "metastoreSynchronizationEnabled": true,
-    "connection": "S3",
+    "connection": "filesystem_folders",
     "path": "/${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -89,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "irene"
     },
-    "lastModifiedOn": 1677509342149
+    "lastModifiedOn": 1677509364845
   },
   "creationTag": {
     "versionNumber": 0,
