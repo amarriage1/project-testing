@@ -4,9 +4,9 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-data = dataiku.Dataset("data")
-data_df = data.get_dataframe()
-
+#data = dataiku.Dataset("data")
+#data_df = data.get_dataframe()
+#
 #path = dataiku.Folder("s3_out").get_path()
 #full_path = path + '/models/top2vec_model_{market}'
 
