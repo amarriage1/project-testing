@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1677527133303
+    "lastModifiedOn": 1677527185359
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,7 +67,6 @@
       {"name":"ORDINAL_POSITION","type":"bigint"},
       {"name":"COLUMN_DEFAULT","type":"string","maxLength":16777216},
       {"name":"newcolumn_expression","type":"bigint","maxLength":4194304},
-      {"name":"newcolumn_expression2","type":"double","meaning":"DoubleMeaning","maxLength":4194304},
       {"name":"IS_NULLABLE","type":"string","maxLength":3},
       {"name":"DATA_TYPE","type":"string","maxLength":16777216},
       {"name":"CHARACTER_MAXIMUM_LENGTH","type":"double"},
