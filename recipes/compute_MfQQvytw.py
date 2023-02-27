@@ -10,5 +10,5 @@ data_df = data.get_dataframe()
 path = dataiku.Folder("s3_out").get_path()
 full_path = path + '/models/top2vec_model_{market}'
 
-csv = data_df.to_csv(full_path)
+#csv = data_df.to_csv(full_path)
 
