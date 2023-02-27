@@ -42,7 +42,8 @@
         "columns": [
           "COLUMN_DEFAULT"
         ],
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "SINGLE_COLUMN",
+        "value": " "
       },
       "alwaysShowComment": false
     },
