@@ -8,6 +8,6 @@ data = dataiku.Dataset("data")
 data_df = data.get_dataframe()
 #
 path = dataiku.Folder("fs_out").get_path()
-full_path = path + 'top2vec_model.csv'
+full_path = path + '/top2vec_model.csv'
 
 csv = data_df.to_csv(full_path)
