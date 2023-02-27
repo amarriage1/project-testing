@@ -34,7 +34,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "NumericalFormatConverter",
@@ -46,6 +46,17 @@
         ],
         "outFormat": "EN",
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(isNull(strval(\"SETTLEMENT NUMBER\")), val(\"TICKET APPLIED QUANTITY - ORIGINAL\"), 0)",
+        "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
     }
@@ -104,6 +115,7 @@
     "TABLE_SCHEMA": 218,
     "IS_SELF_REFERENCING": 158,
     "CHARACTER_SET_CATALOG": 173,
+    "newcolumn_expression": 165,
     "CHARACTER_OCTET_LENGTH": 180,
     "IDENTITY_MINIMUM": 135,
     "DOMAIN_NAME": 100,
@@ -116,7 +128,7 @@
     "ORDINAL_POSITION": 135,
     "IDENTITY_START": 120,
     "DTD_IDENTIFIER": 120,
-    "COLUMN_DEFAULT": 120,
+    "COLUMN_DEFAULT": 285,
     "UDT_CATALOG": 100
   },
   "sorting": [],
