@@ -53,7 +53,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "if(isBlank(strval(\"COLUMN_DEFAULT\")), 1, 0)",
+        "expression": "if(isNull(strval(\"COLUMN_DEFAULT\")), 1, 0)",
         "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
