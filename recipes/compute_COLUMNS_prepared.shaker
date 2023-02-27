@@ -55,7 +55,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "if(isNull(strval(\"SETTLEMENT NUMBER\")), val(\"TICKET APPLIED QUANTITY - ORIGINAL\"), 0)",
+        "expression": "if(isNull(strval(\"COLUMN_DEFAULT\")), 1, 0)",
         "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
@@ -66,7 +66,8 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "column": "newcolumn_expression"
+        "expression": "sum(newcolumn_expression)",
+        "column": "newcolumn_expression2"
       },
       "alwaysShowComment": false
     }
@@ -110,6 +111,7 @@
     "INTERVAL_PRECISION": 150,
     "SCOPE_SCHEMA": 105,
     "IDENTITY_CYCLE": 120,
+    "newcolumn_expression2": 173,
     "COLLATION_CATALOG": 143,
     "CHARACTER_MAXIMUM_LENGTH": 195,
     "MAXIMUM_CARDINALITY": 158,
