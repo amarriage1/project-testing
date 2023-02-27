@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "irene"
+      "login": "admin"
     },
-    "lastModifiedOn": 1670449562376
+    "lastModifiedOn": 1677526842518
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,7 +101,8 @@
       {"name":"IDENTITY_MAXIMUM","type":"string","maxLength":4194304},
       {"name":"IDENTITY_MINIMUM","type":"string","maxLength":4194304},
       {"name":"IDENTITY_CYCLE","type":"string","maxLength":16777216},
-      {"name":"COMMENT","type":"string","maxLength":16777216}
+      {"name":"COMMENT","type":"string","maxLength":16777216},
+      {"name":"newcolumn_expression","type":"string","maxLength":4194304}
     ],
     "userModified": true
   },
