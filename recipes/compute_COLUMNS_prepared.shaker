@@ -43,6 +43,20 @@
         "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "COLUMN_DEFAULT"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "    "
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
