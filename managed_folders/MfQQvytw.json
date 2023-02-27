@@ -1,11 +1,8 @@
 {
   "name": "s3_out",
-  "type": "S3",
+  "type": "Filesystem",
   "params": {
-    "bucket": "andrewm-test-bucket",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "${odbId}",
-    "connection": "S3",
+    "connection": "filesystem_folders",
     "path": "/${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -91,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1677508292307
+    "lastModifiedOn": 1677509136007
   },
   "creationTag": {
     "versionNumber": 0,
