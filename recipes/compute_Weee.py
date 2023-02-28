@@ -5,6 +5,11 @@ from dataiku import pandasutils as pdu
 from top2vec import Top2Vec
 
 import warnings
+
+import os
+working_dir = os.getcwd()
+os.environ['NUMBA_CACHE_DIR'] = working_dir
+
 warnings.filterwarnings("ignore")
 
 model = Top2Vec(documents, embedding_model='distiluse-base-multilingual-cased')
