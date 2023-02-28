@@ -15,7 +15,7 @@ unlabeled_customers_df = unlabeled_customers.get_dataframe()
 Weee_df = unlabeled_customers_df # For this sample code, simply copy input to output
 
 # Read recipe inputs
-data = dataiku.Dataset("data")
+data = dataiku.Dataset("unlabeled_customers")
 data_df = data.get_dataframe()
 #
 path = dataiku.Folder("s3_out").get_path()
