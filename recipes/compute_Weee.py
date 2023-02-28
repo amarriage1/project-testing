@@ -12,11 +12,13 @@ os.environ['NUMBA_CACHE_DIR'] = working_dir
 
 warnings.filterwarnings("ignore")
 
-model = Top2Vec(documents, embedding_model='distiluse-base-multilingual-cased')
-
 # Read recipe inputs
 unlabeled_customers = dataiku.Dataset("unlabeled_customers")
 unlabeled_customers_df = unlabeled_customers.get_dataframe()
+
+model = Top2Vec(unlabeled_customers_df, embedding_model='distiluse-base-multilingual-cased')
+
+
 
 
 # Compute recipe outputs from inputs
