@@ -3,6 +3,9 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
+import warnings
+warnings.filterwarnings("ignore")
+
 # Read recipe inputs
 unlabeled_customers = dataiku.Dataset("unlabeled_customers")
 unlabeled_customers_df = unlabeled_customers.get_dataframe()
@@ -15,7 +18,7 @@ unlabeled_customers_df = unlabeled_customers.get_dataframe()
 Weee_df = unlabeled_customers_df # For this sample code, simply copy input to output
 
 # Read recipe inputs
-data = dataiku.Dataset("unlabeled_customers")
+data = dataiku.Dataset("data")
 data_df = data.get_dataframe()
 #
 path = dataiku.Folder("s3_out").get_path()
@@ -24,5 +27,5 @@ full_path = path + '/models/top2vec_model.csv'
 csv = data_df.to_csv(full_path)
 
 # Write recipe outputs
-Weee = dataiku.Dataset("WERwEW")
+Weee = dataiku.Dataset("Weee")
 Weee.write_with_schema(Weee_df)
