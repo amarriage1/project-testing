@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "irene"
     },
-    "lastModifiedOn": 1677594842346
+    "lastModifiedOn": 1677596148243
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,8 +89,29 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"State","type":"string"},
+      {"name":"Account Length","type":"bigint"},
+      {"name":"Area Code","type":"bigint"},
+      {"name":"Phone","type":"string"},
+      {"name":"Int\u0027l Plan","type":"string"},
+      {"name":"VMail Plan","type":"string"},
+      {"name":"VMail Message","type":"bigint"},
+      {"name":"Day Mins","type":"double"},
+      {"name":"Day Calls","type":"bigint"},
+      {"name":"Day Charge","type":"double"},
+      {"name":"Eve Mins","type":"double"},
+      {"name":"Eve Calls","type":"bigint"},
+      {"name":"Eve Charge","type":"double"},
+      {"name":"Night Mins","type":"double"},
+      {"name":"Night Calls","type":"bigint"},
+      {"name":"Night Charge","type":"double"},
+      {"name":"Intl Mins","type":"double"},
+      {"name":"Intl Calls","type":"bigint"},
+      {"name":"Intl Charge","type":"double"},
+      {"name":"CustServ Calls","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
