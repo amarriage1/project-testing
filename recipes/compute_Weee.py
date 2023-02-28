@@ -24,5 +24,5 @@ full_path = path + '/models/top2vec_model.csv'
 csv = data_df.to_csv(full_path)
 
 # Write recipe outputs
-Weee = dataiku.Dataset("Weee")
+Weee = dataiku.Dataset("WERwEW")
 Weee.write_with_schema(Weee_df)
