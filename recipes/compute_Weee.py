@@ -2,6 +2,7 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+from top2vec import Top2Vec
 
 import warnings
 warnings.filterwarnings("ignore")
