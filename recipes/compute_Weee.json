@@ -30,16 +30,21 @@
   },
   "outputs": {
     "main": {
-      "items": []
+      "items": [
+        {
+          "ref": "WERwEW",
+          "appendMode": false
+        }
+      ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "irene"
     },
-    "lastModifiedOn": 1677594940382
+    "lastModifiedOn": 1677595009199
   },
   "creationTag": {
     "versionNumber": 0,
