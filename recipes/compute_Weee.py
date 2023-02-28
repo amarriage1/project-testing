@@ -28,8 +28,7 @@ model = Top2Vec(unlabeled_customers_df["TABLE_NAME"].values, embedding_model='di
 Weee_df = unlabeled_customers_df # For this sample code, simply copy input to output
 
 # Read recipe inputs
-data = dataiku.Dataset("unlabeled_customers")
-data_df = data.get_dataframe()
+data_df = unlabeled_customers_df
 #
 path = dataiku.Folder("s3_out").get_path()
 full_path = path + '/models/top2vec_model'
