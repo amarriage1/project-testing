@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 unlabeled_customers = dataiku.Dataset("unlabeled_customers")
 unlabeled_customers_df = unlabeled_customers.get_dataframe()
 
-model = Top2Vec(unlabeled_customers_df, embedding_model='distiluse-base-multilingual-cased')
+model = Top2Vec(unlabeled_customers_df[state].values, embedding_model='distiluse-base-multilingual-cased')
 
 
 
