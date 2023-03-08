@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678291962365
+    "lastModifiedOn": 1678291977555
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,7 @@
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_SQL-OUT",
-    "schema": "${NewSchema}",
+    "schema": "",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
