@@ -2,11 +2,18 @@
   "type": "prediction_scoring",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
-  "params": {},
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
   "customMeta": {
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 7,
+  "variables": {},
+  "dkuProperties": [],
   "inputs": {
     "model": {
       "items": [
@@ -35,14 +42,16 @@
       ]
     }
   },
+  "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1486632765606
+    "lastModifiedOn": 1678294755726
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
