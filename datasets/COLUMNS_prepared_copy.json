@@ -28,17 +28,17 @@
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": [
       {
-        "name": "dimension_0",
+        "name": "DATA_TYPE",
         "type": "value"
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678291193125
+    "lastModifiedOn": 1678291214177
   },
   "creationTag": {
     "versionNumber": 0,
