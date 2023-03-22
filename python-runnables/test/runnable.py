@@ -1,6 +1,7 @@
 # This file is the actual code for the Python runnable test
 from dataiku.runnables import Runnable
 import dataiku
+from dataiku.runnables import utils
 
 
 client = dataiku.api_client()
