@@ -51,7 +51,7 @@
     ],
 
     /* list of required permissions on the project to see/run the runnable */
-    "permissions": ['ADMIN'],
+    "permissions": [],
     "resultType": "HTML",
 
     /* label to use when the runnable's result is not inlined in the UI (ex: for urls) */
