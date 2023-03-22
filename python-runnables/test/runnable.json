@@ -13,7 +13,6 @@
 
     /* whether the runnable's code is untrusted */
     "impersonate": true,
-    "requiresGlobalAdmin":true,
     "params": [
         {
             "name": "parameter1",
