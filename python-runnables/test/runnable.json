@@ -61,15 +61,7 @@
     ],
 
     /* list of required permissions on the project to see/run the runnable */
-    "permissions": [],
-
-    /* what the code's run() returns:
-       - NONE : no result
-       - HTML : a string that is a html (utf8 encoded)
-       - FOLDER_FILE : a (folderId, path) pair to a file in a folder of this project (json-encoded)
-       - FILE : raw data (as a python string) that will be stored in a temp file by DSS
-       - URL : a url
-     */
+    "permissions": ['ADMIN'],
     "resultType": "HTML",
 
     /* label to use when the runnable's result is not inlined in the UI (ex: for urls) */
