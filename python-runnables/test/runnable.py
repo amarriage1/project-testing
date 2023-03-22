@@ -1,6 +1,10 @@
 # This file is the actual code for the Python runnable test
 from dataiku.runnables import Runnable
 
+client = dataiku.api_client()
+
+client.list_connections().items()
+
 class MyRunnable(Runnable):
     """The base interface for a Python runnable"""
 
