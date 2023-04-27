@@ -6,7 +6,7 @@
     "customConfig": {
       "algorithm": "annoy",
       "expert": true,
-      "annoy_metric": "manhattan",
+      "annoy_metric": "angular",
       "annoy_num_trees": 10,
       "faiss_index_type": "IndexFlatL2",
       "faiss_lsh_num_bits": 16,
@@ -46,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682628625653
+    "lastModifiedOn": 1682628641418
   },
   "creationTag": {
     "versionNumber": 0,
