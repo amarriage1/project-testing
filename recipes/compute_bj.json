@@ -5,9 +5,7 @@
   "params": {
     "customConfig": {
       "num_neighbors": 5,
-      "feature_columns": [
-        "Day_Calls"
-      ],
+      "feature_columns": [],
       "unique_id_column": "Phone"
     },
     "containerSelection": {
@@ -51,11 +49,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682628675611
+    "lastModifiedOn": 1682628702777
   },
   "creationTag": {
     "versionNumber": 0,
