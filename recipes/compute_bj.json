@@ -3,7 +3,13 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "num_neighbors": 5,
+      "feature_columns": [
+        "Day_Calls"
+      ],
+      "unique_id_column": "Phone"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -45,11 +51,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682628666495
+    "lastModifiedOn": 1682628675611
   },
   "creationTag": {
     "versionNumber": 0,
