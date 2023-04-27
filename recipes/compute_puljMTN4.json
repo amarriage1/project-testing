@@ -4,9 +4,9 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "algorithm": "faiss",
-      "expert": false,
-      "annoy_metric": "angular",
+      "algorithm": "annoy",
+      "expert": true,
+      "annoy_metric": "manhattan",
       "annoy_num_trees": 10,
       "faiss_index_type": "IndexFlatL2",
       "faiss_lsh_num_bits": 16,
@@ -46,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682628452125
+    "lastModifiedOn": 1682628473373
   },
   "creationTag": {
     "versionNumber": 0,
