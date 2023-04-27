@@ -3,7 +3,16 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "algorithm": "annoy",
+      "expert": false,
+      "annoy_metric": "angular",
+      "annoy_num_trees": 10,
+      "faiss_index_type": "IndexFlatL2",
+      "faiss_lsh_num_bits": 16,
+      "feature_columns": [],
+      "unique_id_column": "Phone"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682628423392
+    "lastModifiedOn": 1682628432283
   },
   "creationTag": {
     "versionNumber": 0,
