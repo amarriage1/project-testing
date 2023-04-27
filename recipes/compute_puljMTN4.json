@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "algorithm": "annoy",
+      "algorithm": "faiss",
       "expert": false,
       "annoy_metric": "angular",
       "annoy_num_trees": 10,
@@ -46,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682628432283
+    "lastModifiedOn": 1682628452125
   },
   "creationTag": {
     "versionNumber": 0,
