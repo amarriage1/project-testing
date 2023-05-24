@@ -2,7 +2,7 @@
   "type": "S3",
   "managed": true,
   "featureGroup": false,
-  "formatType": "parquet",
+  "formatType": "orcfile",
   "checklists": {
     "checklists": []
   },
@@ -25,11 +25,10 @@
     }
   },
   "formatParams": {
-    "parquetLowerCaseIdentifiers": false,
-    "representsNullFields": false,
-    "parquetCompressionMethod": "SNAPPY",
-    "parquetFlavor": "HIVE",
-    "parquetBlockSizeMB": 128
+    "compressionMethod": "SNAPPY",
+    "serdeClass": "org.apache.hadoop.hive.ql.io.orc.OrcSerde",
+    "serdeProperties": {},
+    "representsNullFields": false
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -37,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "api:A18KCXP3R8HYKIJK"
     },
-    "lastModifiedOn": 1684951673659
+    "lastModifiedOn": 1684951706175
   },
   "creationTag": {
     "versionNumber": 0,
