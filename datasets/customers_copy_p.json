@@ -2,7 +2,7 @@
   "type": "S3",
   "managed": true,
   "featureGroup": false,
-  "formatType": "orc",
+  "formatType": "parquet",
   "checklists": {
     "checklists": []
   },
@@ -24,17 +24,24 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "parquetLowerCaseIdentifiers": false,
+    "representsNullFields": false,
+    "parquetCompressionMethod": "SNAPPY",
+    "parquetFlavor": "HIVE",
+    "parquetBlockSizeMB": 128
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "api:A18KCXP3R8HYKIJK"
+      "login": "admin"
     },
-    "lastModifiedOn": 1684951535190
+    "lastModifiedOn": 1684951570378
   },
   "creationTag": {
     "versionNumber": 0,
