@@ -1,5 +1,5 @@
 {
-  "type": "Filesystem",
+  "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
   "formatType": "csv",
@@ -60,32 +60,36 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1431017378402
+    "lastModifiedOn": 1685111061713
   },
   "tags": [
     "creator_admin"
   ],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "/DKU_CHURN.unlabeled_customers_prepared",
+    "connection": "snowflake",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_UNLABELED_CUSTOMERS_PREPARED",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
   },
   "schema": {
     "columns": [
-      {"name":"State","type":"string"},
+      {"name":"State","type":"string","maxLength":4194304},
       {"name":"Account_Length","type":"bigint"},
       {"name":"Area_Code","type":"bigint"},
-      {"name":"Phone","type":"string"},
+      {"name":"Phone","type":"string","maxLength":4194304},
       {"name":"Intl_Plan","type":"boolean"},
       {"name":"VMail_Plan","type":"boolean"},
       {"name":"VMail_Message","type":"bigint"},
@@ -104,9 +108,9 @@
       {"name":"Intl_Charge","type":"double"},
       {"name":"Total_Charge","type":"double"},
       {"name":"CustServ_Calls","type":"bigint"},
-      {"name":"Churn","type":"string"}
+      {"name":"Churn","type":"string","maxLength":4194304}
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
