@@ -1,5 +1,5 @@
 {
-  "type": "S3",
+  "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
   "formatType": "orcfile",
@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1684951289132
+    "lastModifiedOn": 1685111019980
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,42 +51,43 @@
   },
   "tags": [],
   "params": {
-    "bucket": "andrewm-test-bucket",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreTableName": "customers_copy",
-    "connection": "S3",
-    "path": "/${projectKey}/customers_copy",
+    "connection": "snowflake",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_CUSTOMERS_COPY",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
   },
   "schema": {
     "columns": [
-      {"name":"State","type":"string"},
-      {"name":"Account Length","type":"string"},
-      {"name":"Area Code","type":"string"},
-      {"name":"Phone","type":"string"},
-      {"name":"Int\u0027l Plan","type":"string"},
-      {"name":"VMail Plan","type":"string"},
-      {"name":"VMail Message","type":"string"},
-      {"name":"Day Mins","type":"string"},
-      {"name":"Day Calls","type":"string"},
-      {"name":"Day Charge","type":"string"},
-      {"name":"Eve Mins","type":"string"},
-      {"name":"Eve Calls","type":"string"},
-      {"name":"Eve Charge","type":"string"},
-      {"name":"Night Mins","type":"string"},
-      {"name":"Night Calls","type":"string"},
-      {"name":"Night Charge","type":"string"},
-      {"name":"Intl Mins","type":"string"},
-      {"name":"Intl Calls","type":"string"},
-      {"name":"Intl Charge","type":"string"},
-      {"name":"CustServ Calls","type":"string"},
-      {"name":"Churn?","type":"string"}
+      {"name":"State","type":"string","maxLength":4194304},
+      {"name":"Account Length","type":"string","maxLength":4194304},
+      {"name":"Area Code","type":"string","maxLength":4194304},
+      {"name":"Phone","type":"string","maxLength":4194304},
+      {"name":"Int\u0027l Plan","type":"string","maxLength":4194304},
+      {"name":"VMail Plan","type":"string","maxLength":4194304},
+      {"name":"VMail Message","type":"string","maxLength":4194304},
+      {"name":"Day Mins","type":"string","maxLength":4194304},
+      {"name":"Day Calls","type":"string","maxLength":4194304},
+      {"name":"Day Charge","type":"string","maxLength":4194304},
+      {"name":"Eve Mins","type":"string","maxLength":4194304},
+      {"name":"Eve Calls","type":"string","maxLength":4194304},
+      {"name":"Eve Charge","type":"string","maxLength":4194304},
+      {"name":"Night Mins","type":"string","maxLength":4194304},
+      {"name":"Night Calls","type":"string","maxLength":4194304},
+      {"name":"Night Charge","type":"string","maxLength":4194304},
+      {"name":"Intl Mins","type":"string","maxLength":4194304},
+      {"name":"Intl Calls","type":"string","maxLength":4194304},
+      {"name":"Intl Charge","type":"string","maxLength":4194304},
+      {"name":"CustServ Calls","type":"string","maxLength":4194304},
+      {"name":"Churn?","type":"string","maxLength":4194304}
     ],
     "userModified": true
   },
