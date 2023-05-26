@@ -3,18 +3,18 @@
   "name": "what",
   "active": false,
   "creationTag": {
-    "versionNumber": 11,
-    "lastModifiedBy": {
-      "login": "irene"
-    },
-    "lastModifiedOn": 1670343411746
-  },
-  "versionTag": {
     "versionNumber": 12,
     "lastModifiedBy": {
       "login": "irene"
     },
     "lastModifiedOn": 1670343430077
+  },
+  "versionTag": {
+    "versionNumber": 13,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685119644650
   },
   "checklists": {
     "checklists": []
@@ -25,7 +25,42 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "T2LgUqt6",
+      "type": "sql_query",
+      "name": "SQL query change",
+      "delay": 900,
+      "active": true,
+      "params": {
+        "connection": "",
+        "sql": "",
+        "hasLimit": true,
+        "limit": 10000
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    },
+    {
+      "id": "jMXQmR4X",
+      "type": "sql_query",
+      "name": "SQL query change",
+      "delay": 900,
+      "active": true,
+      "params": {
+        "connection": "",
+        "sql": "",
+        "hasLimit": true,
+        "limit": 10000
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
