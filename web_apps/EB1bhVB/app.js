@@ -73,7 +73,31 @@ $.getJSON(getWebAppBackendUrl('/first_api_call'), function(data) {
     $('body').append(output)
 });
 
-function send_data(){
- 
-    getWebAppBackendUrl('/submit')
-}
+$('#write').on('click', function(){
+    var data = {}
+    console.log(validator.numberOfInvalids())
+    validator.showErrors()
+    $('.form-control').each(function(index,value){
+        console.log(value.id)
+        if($('#'+value.id).val()=="on"){
+            data[value.id] = $('#'+value.id).is(':checked')
+        }
+        else {
+            data[value.id] = $('#'+value.id).val()
+        }
+    });
+    console.log(data)
+    $.post(getWebAppBackendUrl('write_row'),JSON.stringify({'row': data}),function(data){
+        var data1 = jQuery.parseJSON(data)
+        console.log(jQuery.type(data1))
+        console.log(Object.keys(data1))
+        console.log(data1.status)
+        if (data1.status=='ok'){
+            console.log('ok')
+            $('#success').show()
+        }
+        else {
+            $('#error').show()
+        }
+    })
+})
