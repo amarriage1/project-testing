@@ -19,6 +19,13 @@
         <form id="form-datasets" novalidate>
             <div class="field">
                  <form id="signOffForm" method="post" action="/local/static/testg.php" text="findme">
+                     <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
                 <label for="dataset-name">Dataset Name</label>
                 <select class="dropdown" id="datasets-list" name="datasets-name">
                     <option value="" selected hidden>Pick a dataset...</option>
