@@ -25,6 +25,7 @@
       },
       "scaling": {
         "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
         "hpa": false,
         "hpaTargetCPUPercent": 0,
         "hpaMetrics": [],
@@ -32,7 +33,9 @@
         "hpaMaxPods": 0,
         "hpaAnnotations": []
       },
-      "deploymentModifier": {}
+      "deploymentModifier": {
+        "config": {}
+      }
     },
     "forceAuthentication": true
   },
@@ -40,11 +43,11 @@
   "name": "mmm",
   "apiKey": "h7msW7jNvJ5D2juHwokG4H3j8P7CYQs0",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "irene"
+      "login": "admin"
     },
-    "lastModifiedOn": 1670343853486
+    "lastModifiedOn": 1685458268569
   },
   "creationTag": {
     "versionNumber": 0,
