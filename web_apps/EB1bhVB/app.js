@@ -72,3 +72,6 @@ $.getJSON(getWebAppBackendUrl('/first_api_call'), function(data) {
     const output = $('<pre />').text('Backend reply: ' + JSON.stringify(data));
     $('body').append(output)
 });
+$.getJSON(getWebAppBackendUrl('/submit'), function(data) {
+    console.log('send data from backend')
+});
