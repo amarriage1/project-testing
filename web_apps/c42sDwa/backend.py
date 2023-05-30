@@ -20,3 +20,21 @@ def first_call():
     # Pandas dataFrames are not directly JSON serializable, use to_json()
     data = mydataset_df.to_json()
     return json.dumps({"status": "ok", "data": data})
+
+@app.route('/submit', methods=['POST'])
+
+def submit():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    folder_id ='PauErurp'
+    dataset_name = 'data'
+    client = dataiku.api.client()
+    folder = client.get_managed_folder(folder_id)
+    dataset - folder.get_dataset(dataset_name)
+    dataset.write.schema_from_dataframe(dataiku.Dataset("input").get_dataframe())
+    dataset.write_dataframe(dataiku.Dataset("input").get_dataframe())
+    
+    return "Sign-off recorded"
+
+if __name__ == '__main__':
+    app.run()
