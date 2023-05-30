@@ -20,11 +20,7 @@
   },
   "outputs": {
     "main": {
-      "items": [
-        {
-          "ref": "what"
-        }
-      ]
+      "items": []
     }
   },
   "classes": [],
@@ -34,11 +30,11 @@
   "objectDetectionIOUConflictThreshold": 0.7,
   "permissions": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "irene"
+      "login": "admin"
     },
-    "lastModifiedOn": 1670273136081
+    "lastModifiedOn": 1685457673820
   },
   "creationTag": {
     "versionNumber": 0,
