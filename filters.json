@@ -1,3 +1,33 @@
 {
-  "filters": []
+  "filters": [
+    {
+      "isAdvanced": false,
+      "scope": "PRIVATE",
+      "isDirty": true,
+      "creatorLogin": "admin",
+      "id": "38afb9029bad43795ab983b8b76c260421abe737b881da2addda1ed5c562168e9c563fd2ced726b0371d4514df2cc4879a86d2ffba01b0912c7957f43f21c0ff",
+      "creationDate": 1685457666960,
+      "derivedFromFilterId": "-1",
+      "structuredFlowObjectFilter": {
+        "tags": [],
+        "types": [],
+        "creator": [],
+        "customCreationDateRange": {
+          "from": 0,
+          "to": 0
+        },
+        "customModificationDateRange": {
+          "from": 0,
+          "to": 0
+        },
+        "downstreamPredecessorsIds": [],
+        "datasetTypes": [
+          "Labels"
+        ],
+        "recipeTypes": []
+      },
+      "removeFadedElements": false,
+      "query": "datasetType:Labels"
+    }
+  ]
 }
