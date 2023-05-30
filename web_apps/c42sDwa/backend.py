@@ -35,6 +35,3 @@ def submit():
     dataset.write_dataframe(dataiku.Dataset("input").get_dataframe())
     
     return "Sign-off recorded"
-
-if __name__ == '__main__':
-    app.run()
