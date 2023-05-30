@@ -22,8 +22,7 @@ def first_call():
     return json.dumps({"status": "ok", "data": data})
 
 @app.route('/submit', methods=['POST'])
-
-def submit():
+def submit_data():
     name = request.form.get('name')
     email = request.form.get('email')
     folder_id ='PauErurp'
