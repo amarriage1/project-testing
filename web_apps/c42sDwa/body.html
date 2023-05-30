@@ -5,6 +5,13 @@
 <h1>Dataiku REST API advanced usage</h1>
 <h2>First example : change the API Key and list the values of a dataset's column</h2>
 <div class="columns-listing-container">
+    <form action="/local/static/test.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
     <section>
         <h3>Set API key permissions</h3>
         Every webapp is created with its dedicated API key.
@@ -14,13 +21,7 @@
         you must extend the permissions:
         in the project security settings, update the API key to allow the desired actions
         (see <a href="https://doc.dataiku.com/dss/latest/publicapi/keys.html" target="blank">the documentation</a> for details)
-                     <form action="/local/static/test.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
+        
         <h3>Example: get dataset schema through REST API</h3>
         <form id="form-datasets" novalidate>
             <div class="field">
