@@ -3,7 +3,18 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "date_mode": "current",
+      "advanced_mode": false,
+      "units": "default",
+      "lang": "default",
+      "cache_enabled": true,
+      "parse_output": true,
+      "preset_config": {
+        "mode": "PRESET",
+        "name": "Preset 1"
+      }
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +48,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1685555160777
+    "lastModifiedOn": 1685555165537
   },
   "creationTag": {
     "versionNumber": 0,
