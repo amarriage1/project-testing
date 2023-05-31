@@ -13,7 +13,9 @@
       "preset_config": {
         "mode": "PRESET",
         "name": "Preset 1"
-      }
+      },
+      "latitude_column": "Day Charge",
+      "longitude_column": "Account Length"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -48,11 +50,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1685555165537
+    "lastModifiedOn": 1685555185373
   },
   "creationTag": {
     "versionNumber": 0,
