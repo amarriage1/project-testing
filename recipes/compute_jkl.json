@@ -11,8 +11,13 @@
       "cache_enabled": true,
       "parse_output": true,
       "preset_config": {
-        "mode": "PRESET",
-        "name": "Preset 1"
+        "mode": "INLINE",
+        "inlinedConfig": {
+          "units": "standard",
+          "lang": "en",
+          "api_key": "2cf60f0200f11f79f018b3adbfbe0ca4"
+        },
+        "inlinedPluginConfig": {}
       },
       "latitude_column": "Day Charge",
       "longitude_column": "Account Length"
@@ -50,11 +55,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1685555185373
+    "lastModifiedOn": 1685555463309
   },
   "creationTag": {
     "versionNumber": 0,
