@@ -19,7 +19,7 @@
           "q": {
             "features": {
               "Total_Charge": [
-                412.3324
+                -412.3324
               ]
             }
           }
@@ -43,11 +43,11 @@
     "scopeClaimKey": "scope"
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1691594445100
+    "lastModifiedOn": 1691594465260
   },
   "creationTag": {
     "versionNumber": 0,
