@@ -18,7 +18,7 @@
           "name": "Query #1",
           "q": {
             "features": {
-              "Total_Charge": 412321.3324
+              "Total_Charge": -412321.3324
             }
           }
         }
@@ -41,11 +41,11 @@
     "scopeClaimKey": "scope"
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1691594004925
+    "lastModifiedOn": 1691594054336
   },
   "creationTag": {
     "versionNumber": 0,
