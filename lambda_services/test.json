@@ -1,4 +1,5 @@
 {
+  "name": "test",
   "endpoints": [
     {
       "modelRef": "5HExUjQ1",
@@ -12,7 +13,14 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "RAW",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "Query #1",
+          "q": {
+            "features": {}
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -31,11 +39,11 @@
     "scopeClaimKey": "scope"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1691593722055
+    "lastModifiedOn": 1691593741594
   },
   "creationTag": {
     "versionNumber": 0,
