@@ -1,5 +1,9 @@
 library(dataiku)
 
+dkuSourceLibR("miscfuncs.R")
+
+do_awesome_stuff()
+
 # Recipe inputs
 metrics <- dkuReadDataset("metrics", samplingMethod="head", nbRows=100000)
 
