@@ -1,0 +1,52 @@
+{
+  "endpoints": [
+    {
+      "modelRef": "5HExUjQ1",
+      "useJava": true,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "mlFlowOutputStyle": "RAW",
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "model",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "authMethod": "PUBLIC",
+  "authRealm": {
+    "queryKeys": []
+  },
+  "oauth2Config": {
+    "keysFormat": "JWKS_URI",
+    "scopeClaimFormat": "STRING",
+    "scopeClaimKey": "scope"
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1691593722055
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1691593721698
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
