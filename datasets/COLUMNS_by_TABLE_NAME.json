@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1691697672974
+    "lastModifiedOn": 1691697733687
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,8 +59,209 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"TestSQLScorePartSnowUdf_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST__count","type":"bigint"},
+      {"name":"TestSQLScorePartSnowflake_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST__count","type":"bigint"},
+      {"name":"TestSQLStrat1DBinScoringSn_SYNC_REDISPATCH_count","type":"bigint"},
+      {"name":"TestSQLStrat1DBinScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE_count","type":"bigint"},
+      {"name":"TestSQLStrat1DBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST__count","type":"bigint"},
+      {"name":"TestSQLStratBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST__count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSnUdf_FILTER_ON_PART_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSnUdf_JOINED_SCORED_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSnUdf_SYNC_REDISPATCH_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSnUdf_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSnUdf_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION__count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSn_FILTER_ON_PART_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSn_JOINED_SCORED_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSn_SYNC_REDISPATCH_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE_count","type":"bigint"},
+      {"name":"TestSQLStratMulScoringSn_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION__count","type":"bigint"},
+      {"name":"TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_DECISION_TREE_count","type":"bigint"},
+      {"name":"TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_EXTRA_TREES_count","type":"bigint"},
+      {"name":"TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_RANDOM_FOREST_count","type":"bigint"},
+      {"name":"TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_XGBOOST_count","type":"bigint"}
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "TABLE_NAME"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "TestSQLScorePartSnowUdf_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST_"
+              ],
+              "name": "TestSQLScorePartSnowUdf_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST_",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLScorePartSnowUdf_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST__count"
+            },
+            {
+              "keyValues": [
+                "TestSQLScorePartSnowflake_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST_"
+              ],
+              "name": "TestSQLScorePartSnowflake_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST_",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLScorePartSnowflake_KAGGLE_TITANIC_TRAIN_PREPARED_SCORED_RANDOMFOREST__count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStrat1DBinScoringSn_SYNC_REDISPATCH"
+              ],
+              "name": "TestSQLStrat1DBinScoringSn_SYNC_REDISPATCH",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStrat1DBinScoringSn_SYNC_REDISPATCH_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStrat1DBinScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE"
+              ],
+              "name": "TestSQLStrat1DBinScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStrat1DBinScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStrat1DBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST_"
+              ],
+              "name": "TestSQLStrat1DBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST_",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStrat1DBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST__count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST_"
+              ],
+              "name": "TestSQLStratBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST_",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratBinScoringSn_TITANIC_TRAIN_PART_SCORED_RANDOMFOREST__count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSnUdf_FILTER_ON_PART"
+              ],
+              "name": "TestSQLStratMulScoringSnUdf_FILTER_ON_PART",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSnUdf_FILTER_ON_PART_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSnUdf_JOINED_SCORED"
+              ],
+              "name": "TestSQLStratMulScoringSnUdf_JOINED_SCORED",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSnUdf_JOINED_SCORED_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSnUdf_SYNC_REDISPATCH"
+              ],
+              "name": "TestSQLStratMulScoringSnUdf_SYNC_REDISPATCH",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSnUdf_SYNC_REDISPATCH_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSnUdf_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE"
+              ],
+              "name": "TestSQLStratMulScoringSnUdf_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSnUdf_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSnUdf_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION_"
+              ],
+              "name": "TestSQLStratMulScoringSnUdf_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION_",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSnUdf_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION__count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSn_FILTER_ON_PART"
+              ],
+              "name": "TestSQLStratMulScoringSn_FILTER_ON_PART",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSn_FILTER_ON_PART_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSn_JOINED_SCORED"
+              ],
+              "name": "TestSQLStratMulScoringSn_JOINED_SCORED",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSn_JOINED_SCORED_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSn_SYNC_REDISPATCH"
+              ],
+              "name": "TestSQLStratMulScoringSn_SYNC_REDISPATCH",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSn_SYNC_REDISPATCH_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE"
+              ],
+              "name": "TestSQLStratMulScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSn_TEST_TRAIN_DEPLOY_SCORE_PART_DISCRETE_ALL_AVAILABLE_count"
+            },
+            {
+              "keyValues": [
+                "TestSQLStratMulScoringSn_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION_"
+              ],
+              "name": "TestSQLStratMulScoringSn_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION_",
+              "valueColumns": [],
+              "globalCountColumn": "TestSQLStratMulScoringSn_TRAIN_PREPARED_SCORED_LOGISTICREGRESSION__count"
+            },
+            {
+              "keyValues": [
+                "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_DECISION_TREE"
+              ],
+              "name": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_DECISION_TREE",
+              "valueColumns": [],
+              "globalCountColumn": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_DECISION_TREE_count"
+            },
+            {
+              "keyValues": [
+                "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_EXTRA_TREES"
+              ],
+              "name": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_EXTRA_TREES",
+              "valueColumns": [],
+              "globalCountColumn": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_EXTRA_TREES_count"
+            },
+            {
+              "keyValues": [
+                "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_RANDOM_FOREST"
+              ],
+              "name": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_RANDOM_FOREST",
+              "valueColumns": [],
+              "globalCountColumn": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_RANDOM_FOREST_count"
+            },
+            {
+              "keyValues": [
+                "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_XGBOOST"
+              ],
+              "name": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_XGBOOST",
+              "valueColumns": [],
+              "globalCountColumn": "TestSqlEngineBasicSnowflake_TITANIC_TEST_SQL_SCORED_XGBOOST_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
