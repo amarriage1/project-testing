@@ -1,12 +1,28 @@
 {
   "schemaComputation": "ONLY_IF_NO_METADATA",
-  "identifierColumnsSelection": "EXPLICIT",
   "modalitySlugification": "NONE",
-  "sortModalities": true,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "$withModalityMaxLength": true,
+  "pivots": [
+    {
+      "valueLimit": "TOP_N",
+      "minOccLimit": 0,
+      "topnLimit": 20,
+      "globalCount": true,
+      "explicitValues": [],
+      "keyColumns": [
+        "TABLE_NAME"
+      ],
+      "valueColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "enginesPreferences": {},
+  "identifierColumnsSelection": "EXPLICIT",
+  "sortModalities": true,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -43,18 +59,5 @@
   },
   "explicitIdentifiers": [],
   "otherColumns": [],
-  "pivots": [
-    {
-      "minOccLimit": 0,
-      "topnLimit": 0,
-      "globalCount": true,
-      "explicitValues": [],
-      "keyColumns": [
-        "TABLE_NAME"
-      ],
-      "valueColumns": []
-    }
-  ],
-  "computedColumns": [],
   "customAggregates": []
 }
