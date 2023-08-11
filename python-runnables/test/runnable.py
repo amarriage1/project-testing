@@ -11,7 +11,7 @@ user_client = dataiku.api_client()
 user_auth_info = user_client.get_auth_info()
 # Automatically create a privileged API key and obtain a privileged API client
 # that has administrator privileges.
-admin_client = utils.get_admin_dss_client("creation48", user_auth_info)
+admin_client = utils.get_admin_dss_client("creation48nn", user_auth_info)
 
 admin_client.list_connections().items()
 
