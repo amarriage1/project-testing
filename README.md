@@ -2,6 +2,7 @@ Current Version: 0.1.5 <br>
 Compatible with DSS version: 6.X and higher<br>
 
 ## Plugin information
+Plugin is so dope dawg
 
 This plugin aims at enhancing interactions between Tableau Software products and DSS platform. [Tableau Software](https://tableau.com) offers a leading data visualisation engine available on several of their products (Tableau Server, Online, Desktop...).
 
