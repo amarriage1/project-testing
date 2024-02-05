@@ -138,7 +138,7 @@
     },
     "dkuProperties": []
   },
-  "name": "git",
+  "name": "git (git-dupe)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -202,7 +202,7 @@
     "lastModifiedOn": 1707168188250,
     "extendedProperties": {}
   },
-  "shortDesc": "The project *git* was created by Administrator on Feb 05th 2024",
+  "shortDesc": "The project *git* was created by Administrator on Feb 05th 2024\nThe project *GIT_GIT_DUPE* was copied from *GIT* by Administrator on Feb 05th 2024",
   "tags": [
     "duplicated"
   ],
