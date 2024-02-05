@@ -139,7 +139,6 @@
     "dkuProperties": []
   },
   "name": "git",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -204,7 +203,9 @@
     "extendedProperties": {}
   },
   "shortDesc": "The project *git* was created by Administrator on Feb 05th 2024",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
